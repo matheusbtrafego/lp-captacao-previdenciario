@@ -478,31 +478,93 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
 .reveal.in{opacity:1;transform:none}
 .rd1{transition-delay:.08s}.rd2{transition-delay:.16s}.rd3{transition-delay:.24s}
 
-/* MOBILE */
+/* MOBILE — CORREÇÕES COMPLETAS */
 @media(max-width:900px){
-  #nav,#nav.stuck{padding:16px 24px}
+
+  /* ========== GERAL ========== */
+  #nav,#nav.stuck{padding:16px 20px}
   .nav-r .nav-link{display:none}
-  #hero,#dor,#resultados,#outros,#gestor,#processo,#preco,#faq,#contato,#cta{padding:72px 24px}
-  #portfolio-bar{padding:48px 24px}
-  .hero-inner,.dor-inner,.gestor-grid,.proc-head,.res-top,.form-outer{grid-template-columns:1fr;gap:40px}
-  .pb-inner{grid-template-columns:1fr 1fr;gap:24px}
+  #hero,#dor,#resultados,#outros,#gestor,#processo,#preco,#faq,#contato,#cta{padding:64px 20px}
+  #portfolio-bar{padding:40px 20px}
+  .wrap{padding:0 20px !important}
+  .reveal{transform:translateY(12px)}
+
+  /* ========== HERO ========== */
+  .hero-inner,.dor-inner,.gestor-grid,.proc-head,.res-top,.form-outer{grid-template-columns:1fr;gap:32px}
+  /* Fix 8: remover white-space nowrap do H1 no mobile */
+  .hero-h1 span{white-space:normal !important}
+  .hero-sub{font-size:15px;max-width:100%}
+  /* Fix 13: trust badges mais compactos */
+  .hero-trust{gap:12px}
+  .trust-i{font-size:11px}
+
+  /* Fix 1: Hero cards — padding e fontes menores */
+  .hcard{padding:20px}
+  .hfat{flex-direction:column;gap:10px;align-items:flex-start}
+  .hfat-v{font-size:22px}
+  .hfat-note{text-align:left}
+  .hcard-stats,.hmini-row{grid-template-columns:1fr 1fr !important}
+  .hmini{padding:12px 14px}
+  .hmini-n{font-size:18px}
+  .hmini-l{font-size:11px}
+  .hstat{padding:12px 14px}
+  .hstat-n{font-size:28px}
+
+  /* ========== FIX 2: PORTFOLIO BAR ========== */
+  .pb-inner{grid-template-columns:1fr 1fr;gap:0}
+  .pb-stat{padding:20px 12px}
   .pb-stat+.pb-stat{border-left:none}
   .pb-stat:nth-child(odd){border-right:1px solid var(--border)}
-  .steps,.outros-grid{grid-template-columns:1fr}
-  .depos{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px}
-  .depo{min-width:300px;max-width:340px;flex-shrink:0;scroll-snap-align:start}
-  .fat{flex-direction:column;align-items:flex-start;gap:24px}
-  .fat-r{flex-direction:column;gap:24px;width:100%;align-items:flex-start}
-  .g-stats, .hcard-stats, .hmini-row { grid-template-columns: 1fr 1fr !important; }
-    .hmini { padding: 14px 16px; }
-    .hmini-n { font-size: 20px; }
-    .hmini-l { font-size: 12px; }
-    .hstat { padding: 14px 16px; }
-    .hstat-n { font-size: 30px; }
+  /* Fix 9: separador entre linha 1 e linha 2 */
+  .pb-stat:nth-child(n+3){border-top:1px solid var(--border)}
+  /* Fix 2 cont.: números menores */
+  .pb-n{font-size:clamp(26px,8vw,40px) !important}
+  .pb-l{font-size:12px;letter-spacing:0.02em}
+
+  /* ========== FIX 3: RESULTADOS ========== */
+  .fat{flex-direction:column;align-items:flex-start;gap:20px;padding:24px 20px}
+  /* fat-r: volta para grid 3 cols mas com fontes menores */
+  .fat-r{display:grid !important;grid-template-columns:repeat(3,1fr) !important;gap:12px !important;width:100%;flex-direction:unset;align-items:unset}
+  .fat-sn{font-size:20px !important}
+  .fat-sl{font-size:10px !important}
+  .fat-v{font-size:clamp(24px,7vw,38px)}
   .fat-dv{display:none}
-  .preco-card{padding:36px 24px}
-  .form-row{grid-template-columns:1fr}
+  /* Fix 10: depos com vw fallback */
+  .depos{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px}
+  .depo{min-width:min(300px,85vw);max-width:340px;flex-shrink:0;scroll-snap-align:start}
+
+  /* ========== FIX 11: OUTROS SEGMENTOS ========== */
+  .steps,.outros-grid{grid-template-columns:1fr}
+  .outros-grid{margin-top:28px !important}
+
+  /* ========== FIX 4 + 12: GESTOR / SOBRE ========== */
+  /* Fix 4: reduzir altura da foto */
+  .about-photo-wrap{height:300px !important}
   .gestor-float{right:0}
+  /* Fix 12: override inline border-left dos g-stats */
+  .g-stats{grid-template-columns:1fr !important}
+  .g-stats .gs{border-left:none !important;padding-left:0 !important}
+  .g-stats .gs-n{font-size:28px !important}
+
+  /* ========== FIX 5: NEXUS ========== */
+  /* (min-width dos tabs corrigido no @992px) */
+
+  /* ========== FIX 6: PROCESSO ========== */
+  .p-step{padding:14px 16px}
+
+  /* ========== FIX 13: CTA BOTÕES FULL-WIDTH ========== */
+  .cta-btns{flex-direction:column;align-items:stretch;gap:10px}
+  .cta-btns .btn{text-align:center;justify-content:center;width:100%;box-sizing:border-box}
+
+  /* ========== FIX 7: FORMULÁRIO ========== */
+  .form-row{grid-template-columns:1fr}
+  .form-card{padding:24px 18px}
+  .preco-card{padding:36px 20px}
+  /* custom-options: garantir z-index acima do modal */
+  .custom-options{z-index:9999}
+
+  /* ========== FIX 14+15: FOOTER ========== */
+  footer{padding:32px 20px}
   footer,.ft-in{flex-direction:column;text-align:center;gap:12px}
   .ft-links{flex-wrap:wrap;justify-content:center}
 }
@@ -642,7 +704,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
 @media(max-width: 992px) {
   /* Fixes Nexus Mobile */
   .nexus-tabs { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 16px; margin-bottom: 20px; }
-  .nexus-tab { min-width: 220px; flex-shrink: 0; scroll-snap-align: start; }
+  .nexus-tab { min-width: 160px; flex-shrink: 0; scroll-snap-align: start; }
   .nexus-mockup-wrapper { height: auto; min-height: 500px; }
   .nx-sidebar { display: none; }
   .nx-d-top { grid-template-columns: 1fr 1fr; }
