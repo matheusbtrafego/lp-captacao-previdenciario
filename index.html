@@ -541,13 +541,18 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   /* Fix 4: reduzir altura da foto */
   .about-photo-wrap{height:300px !important}
   .gestor-float{right:0}
-  /* Fix 12: override inline border-left dos g-stats */
-  .g-stats{grid-template-columns:1fr !important}
-  .g-stats .gs{border-left:none !important;padding-left:0 !important}
-  .g-stats .gs-n{font-size:28px !important}
+  /* Fix 12: g-stats em 3 colunas compactas sem border-left */
+  .g-stats{grid-template-columns:repeat(3,1fr) !important;gap:12px !important}
+  .g-stats .gs{border-left:none !important;padding-left:0 !important;padding:0 !important;background:none !important;border:none !important;text-align:left}
+  .g-stats .gs-n{font-size:20px !important;margin-bottom:2px !important}
+  .g-stats .gs-l{font-size:10px !important}
 
-  /* ========== FIX 5: NEXUS ========== */
-  /* (min-width dos tabs corrigido no @992px) */
+  /* ========== FIX 5: NEXUS TABS ========== */
+  /* Esconder texto descritivo — tabs ficam compactas no mobile */
+  .ntab-desc{display:none !important}
+  .nexus-tab{overflow:hidden;padding:12px !important}
+  .ntab-icon{width:32px;height:32px;font-size:16px}
+  .ntab-title{font-size:13px}
 
   /* ========== FIX 6: PROCESSO ========== */
   .p-step{padding:14px 16px}
