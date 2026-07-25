@@ -492,7 +492,8 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   .depos{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px}
   .depo{min-width:300px;max-width:340px;flex-shrink:0;scroll-snap-align:start}
   .fat{flex-direction:column;align-items:flex-start;gap:24px}
-  .fat-r{width:100%;justify-content:space-between}
+  .fat-r{flex-direction:column;gap:24px;width:100%;align-items:flex-start}
+  .g-stats, .hcard-stats { grid-template-columns: 1fr !important; }
   .fat-dv{display:none}
   .preco-card{padding:36px 24px}
   .form-row{grid-template-columns:1fr}
@@ -1303,7 +1304,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
       
       <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-bottom:24px;">Através de campanhas de tráfego pago de alta performance (Meta Ads) e rigorosamente <strong>alinhadas ao Código de Ética da OAB</strong>, atraímos pessoas que já buscam ativamente por seus direitos. Mais do que gerar cliques, nós implementamos o nosso ecossistema proprietário, o <strong>Nexus AI</strong>, que atua como um CRM centralizando e organizando todo o seu funil de atendimento. Nós entregamos a máquina de previsibilidade que o seu escritório precisa para escalar o faturamento de verdade.</p>
 
-      <div class="g-stats" style="grid-template-columns: repeat(3, 1fr); max-width: 600px; gap: 24px; margin-top:32px;">
+      <div class="g-stats" style="max-width: 600px; gap: 24px; margin-top:32px;">
         <div class="gs" style="text-align: left; background: none; border: none; padding: 0;">
           <div class="gs-n" style="font-family: 'Outfit', sans-serif; font-size: 44px; font-weight: 700; color: var(--blue-bright); line-height: 1; margin-bottom: 6px;">R$660k+</div>
           <div class="gs-l" style="font-size: 12px; color: var(--text-3); line-height: 1.5;">Investimento gerenciado</div>
