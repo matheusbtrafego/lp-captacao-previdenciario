@@ -478,6 +478,9 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
 .reveal.in{opacity:1;transform:none}
 .rd1{transition-delay:.08s}.rd2{transition-delay:.16s}.rd3{transition-delay:.24s}
 
+/* NEXUS MOBILE VIEW */
+.nexus-mobile-view{display:none}
+
 /* MOBILE — CORREÇÕES COMPLETAS */
 @media(max-width:900px){
 
@@ -548,11 +551,84 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   .g-stats .gs-l{font-size:10px !important}
 
   /* ========== FIX 5: NEXUS TABS ========== */
+  /* No mobile: esconde o container de tabs e mostra o mobile view */
+  .nexus-container{display:none !important}
+  .nexus-mobile-view{display:block !important;padding-top:0}
   /* Esconder texto descritivo — tabs ficam compactas no mobile */
   .ntab-desc{display:none !important}
   .nexus-tab{overflow:hidden;padding:12px !important}
   .ntab-icon{width:32px;height:32px;font-size:16px}
   .ntab-title{font-size:13px}
+
+  /* --- Mockup browser --- */
+  .nmv-wrap{position:relative;max-width:100%;padding:44px 0 60px}
+  .nmv-browser{
+    background:#0b1325;border-radius:16px;border:1px solid rgba(255,255,255,.08);
+    overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.6);position:relative;z-index:2;
+  }
+  .nmv-bar{
+    background:#111827;padding:10px 14px;display:flex;align-items:center;
+    gap:10px;border-bottom:1px solid rgba(255,255,255,.04);
+  }
+  .nmv-dots{display:flex;gap:5px}
+  .nmv-dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.15)}
+  .nmv-url{
+    font-size:10px;color:rgba(255,255,255,.35);background:rgba(255,255,255,.05);
+    padding:3px 10px;border-radius:4px;flex:1;font-family:'Inter',sans-serif;
+  }
+  .nmv-screen{padding:14px;display:flex;flex-direction:column;gap:10px}
+  .nmv-dash-hdr{display:flex;justify-content:space-between;align-items:center}
+  .nmv-dash-logo{font-size:10px;font-weight:800;color:#A5B4FC;letter-spacing:.06em}
+  .nmv-dash-user{
+    width:22px;height:22px;border-radius:50%;
+    background:linear-gradient(135deg,#3B82F6,#6366F1);
+    display:flex;align-items:center;justify-content:center;
+    font-size:9px;font-weight:700;color:#fff;
+  }
+  .nmv-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .nmv-m{
+    background:rgba(31,41,55,.8);border:1px solid rgba(255,255,255,.05);
+    border-radius:8px;padding:10px 12px;
+  }
+  .nmv-ml{font-size:9px;color:#9ca3af;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px;font-family:'Inter',sans-serif}
+  .nmv-mv{font-size:18px;font-weight:700;color:#fff;font-family:'Outfit',sans-serif}
+  .nmv-table{
+    background:rgba(17,24,39,.6);border-radius:8px;
+    border:1px solid rgba(255,255,255,.03);overflow:hidden;
+  }
+  .nmv-row{
+    padding:9px 12px;border-bottom:1px solid rgba(255,255,255,.03);
+    display:flex;justify-content:space-between;align-items:center;
+  }
+  .nmv-row:last-child{border-bottom:none}
+  .nmv-rn{font-size:11px;color:#e5e7eb;font-family:'Inter',sans-serif}
+  .nmv-rb{
+    font-size:9px;background:rgba(16,185,129,.1);color:#34d399;
+    padding:2px 7px;border-radius:99px;border:1px solid rgba(16,185,129,.2);
+  }
+
+  /* --- Feature floating cards --- */
+  .nmv-feat{
+    position:absolute;display:flex;align-items:center;gap:9px;
+    background:rgba(10,17,35,.96);backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.12);border-radius:12px;
+    padding:10px 13px;font-family:'Inter',sans-serif;
+    font-size:12px;font-weight:500;color:var(--text);
+    box-shadow:0 8px 24px rgba(0,0,0,.5);white-space:nowrap;z-index:10;
+  }
+  .nmv-fi{
+    width:30px;height:30px;border-radius:8px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:14px;flex-shrink:0;
+  }
+  .nmv-fi.blue{background:rgba(59,130,246,.2);border:1px solid rgba(59,130,246,.3)}
+  .nmv-fi.purple{background:rgba(99,102,241,.2);border:1px solid rgba(99,102,241,.3)}
+  .nmv-fi.green{background:rgba(16,185,129,.2);border:1px solid rgba(16,185,129,.3)}
+  .nmv-fi.yellow{background:rgba(251,191,36,.2);border:1px solid rgba(251,191,36,.3)}
+  .nmv-f1{top:0;left:-8px}
+  .nmv-f2{top:0;right:-8px}
+  .nmv-f3{bottom:20px;left:-8px}
+  .nmv-f4{bottom:20px;right:-8px}
 
   /* ========== FIX 6: PROCESSO ========== */
   .p-step{padding:14px 16px}
@@ -1228,6 +1304,75 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
     </div>
   </div>
 </section>
+
+  <!-- NEXUS MOBILE VIEW - apenas mobile -->
+  <div class="nexus-mobile-view" style="padding:0 20px 48px;max-width:100%;overflow:visible">
+    <div class="nmv-wrap">
+      <!-- Mockup browser Nexus -->
+      <div class="nmv-browser">
+        <div class="nmv-bar">
+          <div class="nmv-dots"><span></span><span></span><span></span></div>
+          <div class="nmv-url">app.nexusai.com.br/dashboard</div>
+        </div>
+        <div class="nmv-screen">
+          <div class="nmv-dash-hdr">
+            <div class="nmv-dash-logo">&#x26A1; NEXUS AI</div>
+            <div class="nmv-dash-user">MD</div>
+          </div>
+          <div class="nmv-metrics">
+            <div class="nmv-m">
+              <div class="nmv-ml">Leads Gerados</div>
+              <div class="nmv-mv" style="color:#60A5FA">544</div>
+            </div>
+            <div class="nmv-m">
+              <div class="nmv-ml">CPL M&#233;dio</div>
+              <div class="nmv-mv" style="color:#34D399">R$4,50</div>
+            </div>
+            <div class="nmv-m">
+              <div class="nmv-ml">Investimento</div>
+              <div class="nmv-mv">R$2.450</div>
+            </div>
+            <div class="nmv-m">
+              <div class="nmv-ml">Contratos</div>
+              <div class="nmv-mv" style="color:#FBBF24">14</div>
+            </div>
+          </div>
+          <div class="nmv-table">
+            <div class="nmv-row">
+              <span class="nmv-rn">[BPC/LOAS] Aquisi&#231;&#227;o Frio</span>
+              <span class="nmv-rb">Ativa</span>
+            </div>
+            <div class="nmv-row">
+              <span class="nmv-rn">[Aposentadoria] Regional</span>
+              <span class="nmv-rb">Ativa</span>
+            </div>
+            <div class="nmv-row">
+              <span class="nmv-rn">[Retargeting] 15d</span>
+              <span class="nmv-rb">Ativa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature cards flutuantes -->
+      <div class="nmv-feat nmv-f1">
+        <div class="nmv-fi blue">&#128202;</div>
+        <span>Vis&#227;o Geral / Ads</span>
+      </div>
+      <div class="nmv-feat nmv-f2">
+        <div class="nmv-fi purple">&#129302;</div>
+        <span>Nexus Copy AI</span>
+      </div>
+      <div class="nmv-feat nmv-f3">
+        <div class="nmv-fi green">&#127919;</div>
+        <span>Gest&#227;o de Leads</span>
+      </div>
+      <div class="nmv-feat nmv-f4">
+        <div class="nmv-fi yellow">&#9823;&#65039;</div>
+        <span>Estrat&#233;gia Jur&#237;dica</span>
+      </div>
+    </div>
+  </div>
 
 <!-- OUTROS SEGMENTOS -->
 <section id="outros">
