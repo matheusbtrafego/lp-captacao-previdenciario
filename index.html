@@ -666,75 +666,6 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   .nmv-f3{bottom:20px;left:-8px}
   .nmv-f4{bottom:20px;right:-8px}
 
-  /* --- Mobile Carousel Wrappers --- */
-  .nmv-carousel{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;margin:0 -20px;padding:0 20px 24px;align-items:stretch}
-  .nmv-carousel-item{min-width:90vw;flex-shrink:0;scroll-snap-align:center;display:flex;flex-direction:column}
-  .nmv-wrap{position:relative;max-width:100%;padding:12px 0 44px;flex:1;display:flex;flex-direction:column}
-  .nmv-browser{
-    flex:1;display:flex;flex-direction:column;
-    background:#0b1325;border-radius:16px;border:1px solid rgba(255,255,255,.08);
-    overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.6);position:relative;z-index:2;
-  }
-
-  /* --- Copy AI compact card --- */
-  .ncopy-card{
-    background:#0d1528;display:flex;flex-direction:column;flex:1;
-  }
-  .ncopy-header{
-    background:linear-gradient(135deg,rgba(168,85,247,.15),rgba(34,211,238,.08));
-    padding:14px 16px 12px;border-bottom:1px solid rgba(255,255,255,.06);
-  }
-  .ncopy-logo{display:flex;align-items:center;gap:6px;font-family:'Outfit',sans-serif;font-size:15px;margin-bottom:4px}
-  .ncopy-sub{font-size:11px;color:rgba(255,255,255,.5);font-family:'Inter',sans-serif}
-  .ncopy-body{padding:14px 16px;display:flex;flex-direction:column;gap:0}
-  .ncopy-field-lbl{font-size:8.5px;font-weight:700;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.08em;font-family:'Inter',sans-serif;margin-bottom:6px}
-  .ncopy-select{
-    background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
-    border-radius:8px;padding:9px 12px;font-size:12px;color:var(--text);
-    font-family:'Inter',sans-serif;display:flex;justify-content:space-between;
-  }
-  .ncopy-select span{color:rgba(255,255,255,.4)}
-  .ncopy-radio-row{display:flex;gap:8px}
-  .ncopy-radio{
-    flex:1;padding:7px 10px;border-radius:8px;font-size:10px;
-    font-family:'Inter',sans-serif;border:1px solid rgba(255,255,255,.08);
-    color:rgba(255,255,255,.4);background:rgba(255,255,255,.02);
-  }
-  .ncopy-radio.active{
-    background:rgba(34,211,238,.08);border-color:rgba(34,211,238,.4);
-    color:#22D3EE;
-  }
-  .ncopy-radio.disabled{color:rgba(255,255,255,.2)}
-  .ncopy-formats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
-  .ncopy-fmt{
-    background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);
-    border-radius:8px;padding:10px 4px;text-align:center;font-size:16px;
-    font-family:'Inter',sans-serif;
-  }
-  .ncopy-fmt span{display:block;font-size:7px;color:rgba(255,255,255,.3);margin-top:4px;letter-spacing:.04em}
-  .ncopy-fmt.active{background:rgba(34,211,238,.1);border-color:rgba(34,211,238,.5)}
-  .ncopy-fmt.active span{color:#22D3EE}
-  .ncopy-fmt.dim{opacity:.4}
-  .ncopy-tags{display:flex;flex-wrap:wrap;gap:6px}
-  .ncopy-tag{
-    font-size:10px;font-family:'Inter',sans-serif;
-    padding:5px 10px;border-radius:99px;
-    background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
-    color:rgba(255,255,255,.5);
-  }
-  .ncopy-tag.active{
-    background:rgba(168,85,247,.15);border-color:rgba(168,85,247,.5);
-    color:#C084FC;
-  }
-  .ncopy-btn{
-    margin-top:14px;
-    background:linear-gradient(135deg,#7C3AED,#2563EB);
-    border-radius:10px;padding:12px;text-align:center;
-    font-size:11px;font-weight:700;color:#fff;
-    font-family:'Inter',sans-serif;letter-spacing:.04em;
-    box-shadow:0 4px 16px rgba(124,58,237,.4);
-  }
-
   /* ========== FIX 6: PROCESSO ========== */
   .p-step{padding:14px 16px}
 
@@ -1412,10 +1343,8 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
 
   <!-- NEXUS MOBILE VIEW - apenas mobile -->
   <div class="nexus-mobile-view" style="padding:0 20px 48px;max-width:100%;overflow:visible">
-    <div class="nmv-carousel">
-      <div class="nmv-carousel-item">
-        <div class="nmv-wrap" style="padding: 12px 0 44px">
-          <!-- Mockup browser Nexus -->
+    <div class="nmv-wrap">
+      <!-- Mockup browser Nexus -->
       <div class="nmv-browser">
         <div class="nmv-bar">
           <div class="nmv-dots"><span></span><span></span><span></span></div>
@@ -1524,60 +1453,6 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
       </div>
     </div>
   </div>
-
-  <div class="nmv-carousel-item">
-    <div class="nmv-wrap">
-      <!-- Mockup browser Nexus -->
-      <div class="nmv-browser" style="border-color: rgba(168,85,247,.25); box-shadow: 0 8px 32px rgba(168,85,247,.12);">
-        <div class="nmv-bar">
-          <div class="nmv-dots"><span></span><span></span><span></span></div>
-          <div class="nmv-url">app.nexusai.com.br/copy-ai</div>
-        </div>
-        <!-- Copy AI Card comprimido -->
-        <div class="ncopy-card">
-      <div class="ncopy-header">
-        <div class="ncopy-logo">
-          <span style="color:#A855F7">&#10008;</span>
-          <span style="color:#fff;font-weight:800;letter-spacing:-.01em">NEXUS</span>
-          <span style="color:#22D3EE;font-weight:800;font-style:italic">COPY AI</span>
-        </div>
-        <div class="ncopy-sub">Gere an&#250;ncios com IA em segundos</div>
-      </div>
-      <div class="ncopy-body">
-        <!-- Campo: servi&#231;o -->
-        <div class="ncopy-field-lbl">SERVI&#199;O FOCO</div>
-        <div class="ncopy-select">Div&#243;rcio (Litigioso e Amig&#225;vel) <span>&#9660;</span></div>
-        <!-- Objetivo -->
-        <div class="ncopy-field-lbl" style="margin-top:10px">OBJETIVO</div>
-        <div class="ncopy-radio-row">
-          <div class="ncopy-radio active">&#11044; An&#250;ncio de Vendas</div>
-          <div class="ncopy-radio disabled">&#11044; Org&#226;nico</div>
-        </div>
-        <!-- Formato -->
-        <div class="ncopy-field-lbl" style="margin-top:10px">FORMATO</div>
-        <div class="ncopy-formats">
-          <div class="ncopy-fmt active">&#127909;<br><span>V&#205;DEO</span></div>
-          <div class="ncopy-fmt dim">&#128196;<br><span>TEXTO</span></div>
-          <div class="ncopy-fmt dim">&#128247;<br><span>CARROSSEL</span></div>
-          <div class="ncopy-fmt dim">&#9997;<br><span>COPY</span></div>
-        </div>
-        <!-- Tom de voz -->
-        <div class="ncopy-field-lbl" style="margin-top:10px">TOM DE VOZ</div>
-        <div class="ncopy-tags">
-          <span class="ncopy-tag active">Urg&#234;ncia</span>
-          <span class="ncopy-tag">Autoridade</span>
-          <span class="ncopy-tag">Emp&#225;tico</span>
-          <span class="ncopy-tag">Provocativo</span>
-        </div>
-        <!-- CTA Button -->
-        <div class="ncopy-btn" style="margin-top:auto">&#10024; APLICAR E GERAR COPY &#8594;</div>
-      </div>
-    </div>
-        </div>
-      </div>
-  </div>
-</div>
-</div>
 
 <!-- OUTROS SEGMENTOS -->
 <section id="outros">
