@@ -570,7 +570,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   }
   .nmv-bar{
     background:#111827;padding:10px 14px;display:flex;align-items:center;
-    gap:10px;border-bottom:1px solid rgba(255,255,255,.04);
+    gap:10px;border-bottom:1px solid rgba(255,255,255,.04);flex-shrink:0;
   }
   .nmv-dots{display:flex;gap:5px}
   .nmv-dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.15)}
@@ -667,14 +667,18 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   .nmv-f4{bottom:20px;right:-8px}
 
   /* --- Mobile Carousel Wrappers --- */
-  .nmv-carousel{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;margin:0 -20px;padding:0 20px 24px}
-  .nmv-carousel-item{min-width:90vw;flex-shrink:0;scroll-snap-align:center}
+  .nmv-carousel{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;margin:0 -20px;padding:0 20px 24px;align-items:stretch}
+  .nmv-carousel-item{min-width:90vw;flex-shrink:0;scroll-snap-align:center;display:flex;flex-direction:column}
+  .nmv-wrap{position:relative;max-width:100%;padding:12px 0 44px;flex:1;display:flex;flex-direction:column}
+  .nmv-browser{
+    flex:1;display:flex;flex-direction:column;
+    background:#0b1325;border-radius:16px;border:1px solid rgba(255,255,255,.08);
+    overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.6);position:relative;z-index:2;
+  }
 
   /* --- Copy AI compact card --- */
   .ncopy-card{
-    background:#0d1528;border:1px solid rgba(168,85,247,.25);
-    border-radius:16px;overflow:hidden;
-    box-shadow:0 8px 32px rgba(168,85,247,.12);
+    background:#0d1528;display:flex;flex-direction:column;flex:1;
   }
   .ncopy-header{
     background:linear-gradient(135deg,rgba(168,85,247,.15),rgba(34,211,238,.08));
@@ -1522,8 +1526,15 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   </div>
 
   <div class="nmv-carousel-item">
-    <!-- Copy AI Card comprimido -->
-    <div class="ncopy-card" style="margin-top: 12px">
+    <div class="nmv-wrap">
+      <!-- Mockup browser Nexus -->
+      <div class="nmv-browser" style="border-color: rgba(168,85,247,.25); box-shadow: 0 8px 32px rgba(168,85,247,.12);">
+        <div class="nmv-bar">
+          <div class="nmv-dots"><span></span><span></span><span></span></div>
+          <div class="nmv-url">app.nexusai.com.br/copy-ai</div>
+        </div>
+        <!-- Copy AI Card comprimido -->
+        <div class="ncopy-card">
       <div class="ncopy-header">
         <div class="ncopy-logo">
           <span style="color:#A855F7">&#10008;</span>
@@ -1559,9 +1570,11 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
           <span class="ncopy-tag">Provocativo</span>
         </div>
         <!-- CTA Button -->
-        <div class="ncopy-btn">&#10024; APLICAR E GERAR COPY &#8594;</div>
+        <div class="ncopy-btn" style="margin-top:auto">&#10024; APLICAR E GERAR COPY &#8594;</div>
       </div>
     </div>
+        </div>
+      </div>
   </div>
 </div>
 </div>
