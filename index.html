@@ -666,9 +666,12 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   .nmv-f3{bottom:20px;left:-8px}
   .nmv-f4{bottom:20px;right:-8px}
 
+  /* --- Mobile Carousel Wrappers --- */
+  .nmv-carousel{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;margin:0 -20px;padding:0 20px 24px}
+  .nmv-carousel-item{min-width:90vw;flex-shrink:0;scroll-snap-align:center}
+
   /* --- Copy AI compact card --- */
   .ncopy-card{
-    margin-top:20px;
     background:#0d1528;border:1px solid rgba(168,85,247,.25);
     border-radius:16px;overflow:hidden;
     box-shadow:0 8px 32px rgba(168,85,247,.12);
@@ -1405,8 +1408,10 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
 
   <!-- NEXUS MOBILE VIEW - apenas mobile -->
   <div class="nexus-mobile-view" style="padding:0 20px 48px;max-width:100%;overflow:visible">
-    <div class="nmv-wrap">
-      <!-- Mockup browser Nexus -->
+    <div class="nmv-carousel">
+      <div class="nmv-carousel-item">
+        <div class="nmv-wrap" style="padding: 12px 0 44px">
+          <!-- Mockup browser Nexus -->
       <div class="nmv-browser">
         <div class="nmv-bar">
           <div class="nmv-dots"><span></span><span></span><span></span></div>
@@ -1514,9 +1519,11 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
         <span>Estrat&#233;gia Jur&#237;dica</span>
       </div>
     </div>
+  </div>
 
+  <div class="nmv-carousel-item">
     <!-- Copy AI Card comprimido -->
-    <div class="ncopy-card">
+    <div class="ncopy-card" style="margin-top: 12px">
       <div class="ncopy-header">
         <div class="ncopy-logo">
           <span style="color:#A855F7">&#10008;</span>
@@ -1556,6 +1563,8 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
       </div>
     </div>
   </div>
+</div>
+</div>
 
 <!-- OUTROS SEGMENTOS -->
 <section id="outros">
