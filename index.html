@@ -40,7 +40,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .btn-white:hover{transform:translateY(-2px)}
 .btn-gw{background:rgba(255,255,255,.08);color:#fff;border:1.5px solid rgba(255,255,255,.2)}
 .btn-gw:hover{background:rgba(255,255,255,.14)}
-.btn-arr::after{content:'� ';font-size:15px;transition:transform .2s}
+.btn-arr::after{content:'\2192';font-size:15px;transition:transform .2s}
 .btn-arr:hover::after{transform:translateX(3px)}
 
 /* BADGE */
@@ -73,7 +73,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .nav-link{font-size:13px;color:var(--text-2);transition:color .2s}
 .nav-link:hover{color:var(--blue-light)}
 
-/* �"��"� HERO �"��"� */
+/* HERO */
 #hero{
   min-height:100vh;display:flex;align-items:center;
   padding:120px 48px 80px;position:relative;overflow:hidden;
@@ -132,7 +132,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .hmini-n{font-family:'Outfit',sans-serif;font-size:28px;font-weight:700;color:var(--blue-light);line-height:1;margin-bottom:6px}
 .hmini-l{font-size:14px;color:var(--text-3);line-height:1.4}
 
-/* �"��"� PORTF�LIO BAR �"��"� */
+/* PORTFÓLIO BAR */
 #portfolio-bar{background:var(--bg2);padding:64px 48px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative;overflow:hidden}
 #portfolio-bar::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(37,99,235,.2) 0%,transparent 70%);pointer-events:none}
 .pb-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);position:relative;z-index:2}
@@ -144,7 +144,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .pb-stat:hover .pb-n span{text-shadow:0 0 40px rgba(59,130,246,0.7)}
 .pb-l{font-size:15px;color:var(--text-2);line-height:1.5;font-weight:400;text-transform:uppercase;letter-spacing:0.05em}
 
-/* �"��"� DOR �"��"� */
+/* DOR */
 #dor{padding:96px 48px}
 .dor-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .dor-title{font-size:clamp(28px,3.5vw,44px);margin-bottom:16px;color:var(--text)}
@@ -157,7 +157,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .dor-text{font-size:14px;line-height:1.65;color:var(--text-2)}
 .dor-text strong{color:var(--text);font-weight:500}
 
-/* �"��"� RESULTADOS �"��"� */
+/* RESULTADOS */
 #resultados{background:var(--bg2);padding:96px 48px;border-top:1px solid var(--border)}
 .res-inner{max-width:1100px;margin:0 auto}
 .res-top{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:48px}
@@ -199,7 +199,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .dfl{font-size:11px;color:var(--text-3)}
 .dfv{font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--blue-light)}
 
-/* �"��"� OUTROS SEGMENTOS �"��"� */
+/* OUTROS SEGMENTOS */
 #outros{padding:96px 48px;border-top:1px solid var(--border)}
 .outros-inner{max-width:1100px;margin:0 auto}
 .outros-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
@@ -210,7 +210,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .oseg-title{font-family:'Outfit',sans-serif;font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px}
 .oseg-text{font-size:13px;color:var(--text-2);line-height:1.65}
 
-/* �"��"� GESTOR �"��"� */
+/* GESTOR */
 #gestor{background:var(--bg2);padding:96px 48px;border-top:1px solid var(--border);overflow:hidden}
 .gestor-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
 .gestor-photo-wrap{position:relative}
@@ -236,7 +236,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .nx-mn{font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--blue-bright);line-height:1;margin-bottom:3px}
 .nx-ml{font-size:10px;color:rgba(255,255,255,.25);letter-spacing:.04em}
 
-/* �"��"� CAROUSEL SOBRE �"��"� */
+/* CAROUSEL SOBRE */
 .about-photo-wrap {
   position: relative;
   height: 500px;
@@ -341,7 +341,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
   background: var(--blue-bright);
 }
 
-/* �"��"� PROCESSO �"��"� */
+/* PROCESSO */
 #processo{padding:96px 48px;border-top:1px solid var(--border)}
 .proc-inner{max-width:1100px;margin:0 auto}
 .proc-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:52px}
@@ -373,7 +373,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 
 
 
-/* �"��"� FAQ �"��"� */
+/* FAQ */
 #faq{padding:96px 48px;border-top:1px solid var(--border)}
 .faq-inner{max-width:740px;margin:0 auto}
 .faq-list{margin-top:48px}
@@ -387,7 +387,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .faq-item.open .faq-a{max-height:220px;padding-bottom:20px}
 .faq-a p{font-size:14px;color:var(--text-2);line-height:1.75}
 
-/* �"��"� CTA BANNER �"��"� */
+/* CTA BANNER */
 #cta{background:linear-gradient(135deg,#0f1e38 0%,#162040 100%);padding:80px 48px;text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--border)}
 #cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(37,99,235,.2) 0%,transparent 60%);pointer-events:none}
 .cta-in{max-width:600px;margin:0 auto;position:relative}
@@ -395,7 +395,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .cta-sub{font-size:16px;color:var(--text-2);line-height:1.65;margin-bottom:36px}
 .cta-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
 
-/* �"��"� FORM �"��"� */
+/* FORM */
 #contato{padding:96px 48px;border-top:1px solid var(--border)}
 .form-outer{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .form-title{font-size:clamp(26px,3.5vw,42px);margin-bottom:14px;color:var(--text)}
@@ -471,7 +471,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   .ft-links{flex-wrap:wrap;justify-content:center}
 }
 /* =========================================
-   SE�!ÒO NEXUS (FIDEDIGNO AO NEXUS AI 2.0)
+   SEÇÃO NEXUS
    ========================================= */
 #nexus {
   padding: 120px 0;
@@ -619,7 +619,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   
   /* Fixes Processo Mobile */
   .proc-layout { grid-template-columns: 1fr; } 
-  .proc-mockup { display: flex; transform: scale(0.65); transform-origin: top center; margin-top: -30px; margin-bottom: -120px; } 
+  .proc-mockup { display: none; } 
   .proc-head { grid-template-columns: 1fr; gap: 24px; text-align: center; } 
   .proc-head .eyebrow { justify-content: center; }
 }
@@ -674,7 +674,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
             <div class="hfat-l">Média de faturamento (4 meses)</div>
             <div class="hfat-v">R$66.000+</div>
           </div>
-          <div class="hfat-note">Ticket médio<br>R$1k�3k</div>
+          <div class="hfat-note">Ticket médio<br>R$1k - 3k</div>
         </div>
       </div>
       <div class="hmini-row">
@@ -691,7 +691,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   </div>
 </section>
 
-<!-- PORTF�LIO BAR -->
+<!-- PORTFÓLIO BAR -->
 <div id="portfolio-bar">
   <div class="pb-inner">
     <div class="pb-stat reveal">
@@ -719,14 +719,14 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
     <div class="reveal">
       <div class="eyebrow">A realidade do previdenciário</div>
       <h2 class="dor-title">Você domina a lei.<br>Mas e os <span class="accent">novos clientes?</span></h2>
-      <p class="dor-sub">O advogado previdenciário enfrenta um desafio que vai além do processo � precisa de um fluxo constante de pessoas que buscam benefício e não sabem por onde começar. Essas pessoas estão no Meta Ads agora.</p>
+      <p class="dor-sub">O advogado previdenciário enfrenta um desafio que vai além do processo — precisa de um fluxo constante de pessoas que buscam benefício e não sabem por onde começar. Essas pessoas estão no Meta Ads agora.</p>
       <a href="#contato" class="btn btn-primary btn-arr">Quero esse fluxo no meu escritório</a>
     </div>
     <div class="reveal rd1">
       <div class="dor-items">
-        <div class="dor-item"><span class="dor-num">01</span><span class="dor-text">Você depende de indicação � <strong>e quando param de chegar, o caixa sente imediatamente.</strong></span></div>
-        <div class="dor-item"><span class="dor-num">02</span><span class="dor-text">Já tentou anunciar e só veio lead que nem sabia se tinha direito a nada � <strong>desperdiçando seu tempo.</strong></span></div>
-        <div class="dor-item"><span class="dor-num">03</span><span class="dor-text"><strong>Não dá pra anunciar de qualquer jeito</strong> � a OAB tem regras, e agência genérica não sabe disso.</span></div>
+        <div class="dor-item"><span class="dor-num">01</span><span class="dor-text">Você depende de indicação — <strong>e quando param de chegar, o caixa sente imediatamente.</strong></span></div>
+        <div class="dor-item"><span class="dor-num">02</span><span class="dor-text">Já tentou anunciar e só veio lead que nem sabia se tinha direito a nada — <strong>desperdiçando seu tempo.</strong></span></div>
+        <div class="dor-item"><span class="dor-num">03</span><span class="dor-text"><strong>Não dá pra anunciar de qualquer jeito</strong> — a OAB tem regras, e agência genérica não sabe disso.</span></div>
         <div class="dor-item"><span class="dor-num">04</span><span class="dor-text">Você não quer gastar em anúncio sem saber se está trazendo contrato de verdade.</span></div>
       </div>
     </div>
@@ -741,7 +741,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
         <div class="eyebrow">Resultados documentados</div>
         <h2 style="font-size:clamp(28px,3.5vw,44px);color:var(--text)">Números reais.<br>Clientes <span class="accent">reais.</span></h2>
       </div>
-      <p class="res-desc">Faturamento calculado com base no ticket médio informado pelos próprios advogados. Sem invenção.</p>
+      <p class="res-desc">Faturamento calculado com base no ticket médio informado pelos próprios advogados. Variações podem ocorrer conforme a operação e taxas de fechamento.</p>
     </div>
     <div class="fat reveal">
       <div>
@@ -826,14 +826,14 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
           <div style="margin-left:auto"><span class="badge badge-blue">Geral</span></div>
         </div>
         <div class="depo-text" style="margin-top:16px;">
-          "O diferencial da X6 são os pareceres semanais, o controle diário e a adoção das melhores estratégias, <strong>tudo dentro do provimento da OAB</strong> e com muita transparência. O empenho e domínio das plataformas é incontestável. �0 um investimento que se paga muito rápido, gerando o maior número de leads qualificados possível."
+          "O diferencial da X6 são os pareceres semanais, o controle diário e a adoção das melhores estratégias, <strong>tudo dentro do provimento da OAB</strong> e com muita transparência. O empenho e domínio das plataformas é incontestável. É um investimento que se paga muito rápido, gerando o maior número de leads qualificados possível."
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SE�!ÒO NEXUS -->
+<!-- SEÇÃO NEXUS -->
 <section id="nexus">
   <div class="wrap">
     <div class="nexus-header reveal">
@@ -846,35 +846,35 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
       <!-- Topo: 5 Abas de Interação (Grid) -->
       <div class="nexus-tabs">
         <div class="nexus-tab active" data-target="m-dash">
-          <div class="ntab-icon">�x`</div>
+          <div class="ntab-icon">&#128202;</div>
           <div class="ntab-info">
             <h3 class="ntab-title">Visão Geral</h3>
             <p class="ntab-desc">Métricas de investimento, leads e custo real em campanhas de Ads.</p>
           </div>
         </div>
         <div class="nexus-tab" data-target="m-copy">
-          <div class="ntab-icon">�S�️</div>
+          <div class="ntab-icon">&#129302;</div>
           <div class="ntab-info">
             <h3 class="ntab-title">Nexus Copy AI</h3>
             <p class="ntab-desc">IA criando múltiplas variações de copy personalizadas para cada serviço.</p>
           </div>
         </div>
         <div class="nexus-tab" data-target="m-fin">
-          <div class="ntab-icon">�x�</div>
+          <div class="ntab-icon">&#128179;</div>
           <div class="ntab-info">
             <h3 class="ntab-title">Gestão de Assinatura</h3>
             <p class="ntab-desc">Controle transparente do seu plano: veja sua próxima renovação e histórico de faturas.</p>
           </div>
         </div>
         <div class="nexus-tab" data-target="m-crm">
-          <div class="ntab-icon">�x9</div>
+          <div class="ntab-icon">&#127919;</div>
           <div class="ntab-info">
             <h3 class="ntab-title">Gestão de Leads</h3>
             <p class="ntab-desc">CRM kanban intuitivo para organizar os atendimentos e controlar todo o funil do escritório.</p>
           </div>
         </div>
         <div class="nexus-tab" data-target="m-strat">
-          <div class="ntab-icon">�xa</div>
+          <div class="ntab-icon">&#9823;&#65039;</div>
           <div class="ntab-info">
             <h3 class="ntab-title">Estratégia Jurídica</h3>
             <p class="ntab-desc">Formulário de mapeamento e narrativas validadas contra objeções do cliente.</p>
@@ -945,7 +945,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
           </div>
 
           <div class="nx-content">
-            <!-- TELA 1: DASHBOARD / VISÒO GERAL -->
+            <!-- TELA 1: DASHBOARD / VISÃO GERAL -->
             <div class="mockup-view active" id="m-dash">
               <div class="nx-d-top">
                 <div class="nx-d-card">
@@ -1002,10 +1002,10 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
                     <input type="text" class="nx-input" value="BPC/LOAS" readonly>
                   </div>
                   <div class="nx-input-grp">
-                    <span class="nx-input-lbl">�ngulo / Dor</span>
+                    <span class="nx-input-lbl">Ângulo / Dor</span>
                     <input type="text" class="nx-input" value="Doença grave incapacitante" readonly>
                   </div>
-                  <div class="nx-btn">�S� Gerar Variações IA</div>
+                  <div class="nx-btn">⚡ Gerar Variações IA</div>
                 </div>
                 <div class="nx-copy-right">
                   <div class="nx-copy-card">
@@ -1089,13 +1089,13 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
                   <div class="nx-k-title">Agendados <span class="nx-k-badge">2</span></div>
                   <div class="nx-k-card" style="border-left: 3px solid #6366F1;">
                     <div class="nx-k-name">Ana Paula Silva</div>
-                    <div class="nx-k-sub">�x& Reunião Hoje 14h</div>
+                    <div class="nx-k-sub">⚡ Reunião Hoje 14h</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- TELA 5: ESTRAT�0GIA / NARRATIVAS -->
+            <!-- TELA 5: ESTRATÉGIA / NARRATIVAS -->
             <div class="mockup-view" id="m-strat">
               <div class="nx-strat-layout">
                 <div class="nx-strat-card">
@@ -1132,23 +1132,23 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
     <div class="reveal">
       <div class="eyebrow">Outros segmentos</div>
       <h2 style="font-size:clamp(26px,3.5vw,42px);color:var(--text)">Não é previdenciário?<br><span class="accent">A gente também atende.</span></h2>
-      <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-top:12px;max-width:560px">Cada nicho tem sua estratégia e seu público. A metodologia é a mesma � o que muda é o ângulo da campanha.</p>
+      <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-top:12px;max-width:560px">Cada nicho tem sua estratégia e seu público. A metodologia é a mesma — o que muda é o ângulo da campanha.</p>
     </div>
     <div class="outros-grid">
       <div class="oseg reveal">
         <div class="oseg-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
         <div class="oseg-title">Direito de Família</div>
-        <p class="oseg-text">Divórcio, guarda, inventário � pessoas em situação emocional que buscam ajuda e encontram sua campanha no momento certo.</p>
+        <p class="oseg-text">Divórcio, guarda, inventário — pessoas em situação emocional que buscam ajuda e encontram sua campanha no momento certo.</p>
       </div>
       <div class="oseg reveal rd1">
         <div class="oseg-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
         <div class="oseg-title">Trabalhista</div>
-        <p class="oseg-text">Rescisão indevida, horas extras, assédio � trabalhadores demitidos buscando entender seus direitos agora.</p>
+        <p class="oseg-text">Rescisão indevida, horas extras, assédio — trabalhadores demitidos buscando entender seus direitos agora.</p>
       </div>
       <div class="oseg reveal rd2">
         <div class="oseg-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <div class="oseg-title">Civil &amp; Consumidor</div>
-        <p class="oseg-text">Cobranças indevidas, danos morais, contratos � volume alto de lead com custo de aquisição baixo.</p>
+        <p class="oseg-text">Cobranças indevidas, danos morais, contratos — volume alto de lead com custo de aquisição baixo.</p>
       </div>
     </div>
   </div>
@@ -1223,12 +1223,12 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
         </div>
         <div class="pm-center">Nexus AI</div>
         
-        <div class="pm-node pm-n1 active" data-node="1">�x� Mapeamento</div>
-        <div class="pm-node pm-n2" data-node="2">�x` Matriz SWOT</div>
-        <div class="pm-node pm-n3" data-node="3">�x}� Estratégia</div>
-        <div class="pm-node pm-n4" data-node="4">�xR� Canais (Ads)</div>
-        <div class="pm-node pm-n5" data-node="5">�S�️ Narrativas</div>
-        <div class="pm-node pm-n6" data-node="6">�xa� Funil Ativo</div>
+        <div class="pm-node pm-n1 active" data-node="1">Mapeamento</div>
+        <div class="pm-node pm-n2" data-node="2">Matriz SWOT</div>
+        <div class="pm-node pm-n3" data-node="3">Estratégia</div>
+        <div class="pm-node pm-n4" data-node="4">Canais (Ads)</div>
+        <div class="pm-node pm-n5" data-node="5">Narrativas</div>
+        <div class="pm-node pm-n6" data-node="6">Funil Ativo</div>
       </div>
     </div>
   </div>
@@ -1271,7 +1271,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
       
       <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-top:16px;margin-bottom:12px;">Nós somos a <strong>Agência X6</strong>, uma assessoria estratégica com foco exclusivo em alavancar bancas de advocacia. Nossa missão nasceu de uma constatação simples: excelentes advogados estão ficando para trás por dependerem exclusivamente do imprevisível "boca a boca".</p>
       
-      <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-bottom:24px;">Através de campanhas de tráfego pago de alta performance (Meta Ads) e rigorosamente <strong>alinhadas ao Código de �Ética da OAB</strong>, atraímos pessoas que já buscam ativamente por seus direitos. Mais do que gerar cliques, nós implementamos o nosso ecossistema proprietário, o <strong>Nexus AI</strong>, que atua como um CRM centralizando e organizando todo o seu funil de atendimento. Nós entregamos a máquina de previsibilidade que o seu escritório precisa para escalar o faturamento de verdade.</p>
+      <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-bottom:24px;">Através de campanhas de tráfego pago de alta performance (Meta Ads) e rigorosamente <strong>alinhadas ao Código de Ética da OAB</strong>, atraímos pessoas que já buscam ativamente por seus direitos. Mais do que gerar cliques, nós implementamos o nosso ecossistema proprietário, o <strong>Nexus AI</strong>, que atua como um CRM centralizando e organizando todo o seu funil de atendimento. Nós entregamos a máquina de previsibilidade que o seu escritório precisa para escalar o faturamento de verdade.</p>
 
       <div class="g-stats" style="grid-template-columns: repeat(3, 1fr); max-width: 600px; gap: 24px; margin-top:32px;">
         <div class="gs" style="text-align: left; background: none; border: none; padding: 0;">
@@ -1299,11 +1299,11 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
       <h2 style="font-size:clamp(24px,3.5vw,40px);color:var(--text)">O que todo advogado pergunta<br>antes de começar.</h2>
     </div>
     <div class="faq-list reveal">
-      <div class="faq-item"><div class="faq-q">Isso não viola o Código de �Ética da OAB?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Não. Toda campanha segue as Resoluções do CFO-OAB sobre publicidade advocatícia. Trabalhamos com copy informativo, sem mercantilização. Antes de qualquer peça ir ao ar, verificamos dentro das normas.</p></div></div>
-      <div class="faq-item"><div class="faq-q">Quanto preciso investir em anúncios além da gestão?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Recomendamos mínimo R$800/mês em mídia para resultados consistentes. Para escalar, R$1.500�R$3.000/mês gera volume expressivo de leads qualificados.</p></div></div>
-      <div class="faq-item"><div class="faq-q">O lead que vai chegar já entende o processo?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Trabalhamos para entregar leads que já manifestaram interesse ativo. O trabalho de qualificação começa na segmentação e no copy � mas a conversão final depende do atendimento do seu escritório. Quanto melhor o atendimento, maior a taxa de contrato.</p></div></div>
-      <div class="faq-item"><div class="faq-q">Preciso ter site ou landing page já pronta?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Não. A landing page está inclusa no plano. Alternativamente, podemos usar formulário nativo do Meta � você começa do zero, sem nenhum ativo prévio.</p></div></div>
-      <div class="faq-item"><div class="faq-q">Tem fidelidade ou contrato mínimo?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Compromisso de 3 meses � menos que isso não entrega resultado consistente. Após o período, renovação mensal com 30 dias de aviso para cancelar.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Isso não viola o Código de Ética da OAB?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Não. Toda campanha segue as Resoluções do CFO-OAB sobre publicidade advocatícia. Trabalhamos com copy informativo, sem mercantilização. Antes de qualquer peça ir ao ar, verificamos dentro das normas.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Quanto preciso investir em anúncios além da gestão?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Recomendamos mínimo R$800/mês em mídia para resultados consistentes. Para escalar, R$1.500 - R$3.000/mês gera volume expressivo de leads qualificados.</p></div></div>
+      <div class="faq-item"><div class="faq-q">O lead que vai chegar já entende o processo?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Trabalhamos para entregar leads que já manifestaram interesse ativo. O trabalho de qualificação começa na segmentação e no copy — mas a conversão final depende do atendimento do seu escritório. Quanto melhor o atendimento, maior a taxa de contrato.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Preciso ter site ou landing page já pronta?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Não. A landing page está inclusa no plano. Alternativamente, podemos usar formulário nativo do Meta — você começa do zero, sem nenhum ativo prévio.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Tem fidelidade ou contrato mínimo?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Compromisso de 3 meses — menos que isso não entrega resultado consistente. Após o período, renovação mensal com 30 dias de aviso para cancelar.</p></div></div>
     </div>
   </div>
 </section>
@@ -1312,7 +1312,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
 <div id="cta">
   <div class="cta-in reveal">
     <h2 class="cta-title">Pronto para ter um fluxo constante de novos casos?</h2>
-    <p class="cta-sub">Preencha o formulário. Retornamos em até 24h � sem reunião obrigatória, sem compromisso.</p>
+    <p class="cta-sub">Preencha o formulário. Retornamos em até 24h — sem reunião obrigatória, sem compromisso.</p>
     <div class="cta-btns">
       <a href="#contato" class="btn btn-white btn-arr">Quero mais contratos</a>
       <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-gw btn-arr">Falar no WhatsApp</a>
@@ -1326,7 +1326,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
     <div class="reveal">
       <div class="eyebrow">Contato</div>
       <h2 class="form-title">Vamos conversar sobre<br>o seu <em>escritório.</em></h2>
-      <p class="form-desc">Preencha o formulário. Retornamos em até 24h por WhatsApp � diagnóstico gratuito, sem compromisso.</p>
+      <p class="form-desc">Preencha o formulário. Retornamos em até 24h por WhatsApp — diagnóstico gratuito, sem compromisso.</p>
       <div class="form-gs">
         <div class="fg"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>Resposta em até 24h por WhatsApp</div>
         <div class="fg"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>Diagnóstico gratuito antes de qualquer proposta</div>
@@ -1350,7 +1350,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
         </div>
         <div class="field"><label>Como prefere o atendimento?</label><select required><option value="" disabled selected>Selecione</option><option>Conversar pelo WhatsApp</option><option>Agendar uma reunião de diagnóstico</option></select></div>
         <div class="field"><label>Seu maior desafio hoje</label><textarea placeholder="Ex: Dependência de indicação, leads desqualificados..."></textarea></div>
-        <button type="submit" class="form-sub">Quero mais contratos � </button>
+        <button type="submit" class="form-sub">Quero mais contratos &rarr;</button>
         <p class="form-priv">Seus dados são usados apenas para entrar em contato. Sem spam.</p>
       </form>
     </div>
@@ -1443,7 +1443,7 @@ document.getElementById('contactForm').addEventListener('submit',e=>{
   btn.textContent='Enviado!';
   btn.style.background='#10b981';
   setTimeout(()=>{
-    btn.textContent='Quero mais contratos � ';
+    btn.textContent='Quero mais contratos &rarr;';
     btn.style.background='';
   },3000);
 });
@@ -1509,7 +1509,7 @@ if(formCard) {
     btn.textContent='Enviado!';
     btn.style.background='#10b981';
     setTimeout(()=>{
-      btn.textContent='Quero mais contratos � ';
+      btn.textContent='Quero mais contratos &rarr;';
       btn.style.background='';
       closeModal();
     },3000);
