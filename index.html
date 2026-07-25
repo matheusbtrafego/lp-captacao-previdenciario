@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -73,7 +73,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .nav-link{font-size:13px;color:var(--text-2);transition:color .2s}
 .nav-link:hover{color:var(--blue-light)}
 
-/* â•â• HERO â•â• */
+/* ══ HERO ══ */
 #hero{
   min-height:100vh;display:flex;align-items:center;
   padding:120px 48px 80px;position:relative;overflow:hidden;
@@ -132,7 +132,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .hmini-n{font-family:'Outfit',sans-serif;font-size:28px;font-weight:700;color:var(--blue-light);line-height:1;margin-bottom:6px}
 .hmini-l{font-size:14px;color:var(--text-3);line-height:1.4}
 
-/* â•â• PORTFÁ“LIO BAR â•â• */
+/* ══ PORTFÓLIO BAR ══ */
 #portfolio-bar{background:var(--bg2);padding:64px 48px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative;overflow:hidden}
 #portfolio-bar::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(37,99,235,.2) 0%,transparent 70%);pointer-events:none}
 .pb-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);position:relative;z-index:2}
@@ -144,7 +144,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .pb-stat:hover .pb-n span{text-shadow:0 0 40px rgba(59,130,246,0.7)}
 .pb-l{font-size:15px;color:var(--text-2);line-height:1.5;font-weight:400;text-transform:uppercase;letter-spacing:0.05em}
 
-/* â•â• DOR â•â• */
+/* ══ DOR ══ */
 #dor{padding:96px 48px}
 .dor-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .dor-title{font-size:clamp(28px,3.5vw,44px);margin-bottom:16px;color:var(--text)}
@@ -157,7 +157,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .dor-text{font-size:14px;line-height:1.65;color:var(--text-2)}
 .dor-text strong{color:var(--text);font-weight:500}
 
-/* â•â• RESULTADOS â•â• */
+/* ══ RESULTADOS ══ */
 #resultados{background:var(--bg2);padding:96px 48px;border-top:1px solid var(--border)}
 .res-inner{max-width:1100px;margin:0 auto}
 .res-top{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:48px}
@@ -199,7 +199,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .dfl{font-size:11px;color:var(--text-3)}
 .dfv{font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--blue-light)}
 
-/* â•â• OUTROS SEGMENTOS â•â• */
+/* ══ OUTROS SEGMENTOS ══ */
 #outros{padding:96px 48px;border-top:1px solid var(--border)}
 .outros-inner{max-width:1100px;margin:0 auto}
 .outros-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
@@ -210,7 +210,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .oseg-title{font-family:'Outfit',sans-serif;font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px}
 .oseg-text{font-size:13px;color:var(--text-2);line-height:1.65}
 
-/* â•â• GESTOR â•â• */
+/* ══ GESTOR ══ */
 #gestor{background:var(--bg2);padding:96px 48px;border-top:1px solid var(--border);overflow:hidden}
 .gestor-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
 .gestor-photo-wrap{position:relative}
@@ -236,7 +236,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .nx-mn{font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--blue-bright);line-height:1;margin-bottom:3px}
 .nx-ml{font-size:10px;color:rgba(255,255,255,.25);letter-spacing:.04em}
 
-/* â•â• CAROUSEL SOBRE â•â• */
+/* ══ CAROUSEL SOBRE ══ */
 .about-photo-wrap {
   position: relative;
   height: 500px;
@@ -341,39 +341,26 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
   background: var(--blue-bright);
 }
 
-/* â•â• PROCESSO â•â• */
+/* ══ PROCESSO ══ */
 #processo{padding:96px 48px;border-top:1px solid var(--border)}
 .proc-inner{max-width:1100px;margin:0 auto}
 .proc-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:52px}
 .proc-desc{font-size:15px;color:var(--text-2);line-height:1.7}
-.proc-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.proc-steps { display: flex; flex-direction: column; gap: 12px; }
-.p-step { display: flex; gap: 20px; background: rgba(255,255,255,0.02); padding: 20px 24px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s; position: relative; overflow: hidden; align-items: center; }
-.p-step:hover, .p-step.active { background: rgba(37,99,235,0.08); border-color: rgba(37,99,235,0.4); transform: translateX(5px); }
-.p-step-n { font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 700; color: var(--blue); opacity: 0.3; transition: opacity 0.3s; }
-.p-step.active .p-step-n { opacity: 1; color: var(--blue-bright); }
-.p-step-content h4 { font-family: 'Outfit', sans-serif; font-size: 16px; color: #fff; margin-bottom: 4px; }
-.p-step-content p { font-size: 13px; color: var(--text-3); line-height: 1.5; margin: 0; }
-.proc-mockup { background: rgba(17,24,39,0.7); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; position: relative; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: inset 0 0 40px rgba(0,0,0,0.5), 0 20px 60px rgba(0,0,0,0.5); }
-.pm-node { position: absolute; background: rgba(31,41,55,0.9); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px 16px; font-size: 13px; color: #fff; font-weight: 600; backdrop-filter: blur(10px); opacity: 0.2; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); transform: scale(0.9); z-index: 5; text-align: center; white-space: nowrap; }
-.pm-node.active { opacity: 1; transform: scale(1.1); border-color: var(--blue-bright); box-shadow: 0 0 30px rgba(37,99,235,0.4); background: rgba(37,99,235,0.1); }
-.pm-n1 { top: 12%; left: 50%; margin-left: -65px; }
-.pm-n2 { top: 30%; right: 10%; }
-.pm-n3 { bottom: 30%; right: 10%; }
-.pm-n4 { bottom: 12%; left: 50%; margin-left: -70px; }
-.pm-n5 { bottom: 30%; left: 10%; }
-.pm-n6 { top: 30%; left: 10%; }
-.pm-center { width: 90px; height: 90px; background: radial-gradient(circle, var(--blue-bright) 0%, var(--blue) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-family:'Outfit', sans-serif; font-size: 16px; color: #fff; z-index: 10; box-shadow: 0 0 30px rgba(37,99,235,0.5); animation: pulseCenter 2s infinite; border: 4px solid rgba(255,255,255,0.1); }
-@keyframes pulseCenter { 0% { box-shadow: 0 0 0 0 rgba(37,99,235,0.6); } 70% { box-shadow: 0 0 0 25px rgba(37,99,235,0); } 100% { box-shadow: 0 0 0 0 rgba(37,99,235,0); } }
-.pm-lines svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
-.pm-line { fill: none; stroke: rgba(255,255,255,0.05); stroke-width: 2; transition: stroke 0.5s; stroke-dasharray: 6 6; }
-.pm-line.active { stroke: var(--blue-bright); filter: drop-shadow(0 0 5px var(--blue-bright)); animation: dash 20s linear infinite; }
-@keyframes dash { to { stroke-dashoffset: -1000; } }
-@media(max-width: 992px) { .proc-layout { grid-template-columns: 1fr; } .proc-mockup { display: none; } .proc-head { grid-template-columns: 1fr; gap: 24px; text-align: center; } .proc-head .eyebrow { justify-content: center; } }
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{border-radius:var(--r-xl);padding:26px 22px;background:var(--bg2);border:1px solid var(--border);transition:all .3s;cursor:default}
+.step:hover{border-color:var(--blue-border);transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.step-n{font-family:'Outfit',sans-serif;font-size:40px;font-weight:700;color:rgba(59,130,246,.15);line-height:1;margin-bottom:16px;transition:color .3s}
+.step:hover .step-n{color:rgba(59,130,246,.25)}
+.step-iw{width:38px;height:38px;background:var(--blue-xlight);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;margin-bottom:14px;transition:background .3s}
+.step:hover .step-iw{background:var(--blue)}
+.step-ic{width:19px;height:19px;stroke:var(--blue-light);fill:none;stroke-width:1.75;transition:stroke .3s}
+.step:hover .step-ic{stroke:#fff}
+.step-title{font-family:'Outfit',sans-serif;font-size:14px;font-weight:600;color:var(--text);margin-bottom:7px}
+.step-desc{font-size:13px;color:var(--text-3);line-height:1.6}
 
 
 
-/* â•â• FAQ â•â• */
+/* ══ FAQ ══ */
 #faq{padding:96px 48px;border-top:1px solid var(--border)}
 .faq-inner{max-width:740px;margin:0 auto}
 .faq-list{margin-top:48px}
@@ -387,7 +374,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .faq-item.open .faq-a{max-height:220px;padding-bottom:20px}
 .faq-a p{font-size:14px;color:var(--text-2);line-height:1.75}
 
-/* â•â• CTA BANNER â•â• */
+/* ══ CTA BANNER ══ */
 #cta{background:linear-gradient(135deg,#0f1e38 0%,#162040 100%);padding:80px 48px;text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--border)}
 #cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(37,99,235,.2) 0%,transparent 60%);pointer-events:none}
 .cta-in{max-width:600px;margin:0 auto;position:relative}
@@ -395,7 +382,7 @@ h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:-0.02em;
 .cta-sub{font-size:16px;color:var(--text-2);line-height:1.65;margin-bottom:36px}
 .cta-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
 
-/* â•â• FORM â•â• */
+/* ══ FORM ══ */
 #contato{padding:96px 48px;border-top:1px solid var(--border)}
 .form-outer{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .form-title{font-size:clamp(26px,3.5vw,42px);margin-bottom:14px;color:var(--text)}
@@ -470,159 +457,6 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   footer,.ft-in{flex-direction:column;text-align:center;gap:12px}
   .ft-links{flex-wrap:wrap;justify-content:center}
 }
-/* =========================================
-   SEÁ‡ÁƒO NEXUS (FIDEDIGNO AO NEXUS AI 2.0)
-   ========================================= */
-#nexus {
-  padding: 120px 0;
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-  position: relative;
-  overflow: hidden;
-}
-#nexus::before {
-  content: ''; position: absolute; width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 70%);
-  top: -150px; left: -200px; border-radius: 50%; pointer-events: none;
-}
-.nexus-header { text-align: center; margin-bottom: 64px; position: relative; z-index: 2; }
-.nexus-header h2 { font-size: clamp(32px, 4vw, 48px); color: var(--text); margin-bottom: 16px; line-height: 1.1; letter-spacing: -0.02em; }
-.nexus-header p { font-family: 'Inter', sans-serif; font-size: 16px; color: var(--text-2); max-width: 600px; margin: 0 auto; line-height: 1.6; }
-
-.nexus-container { display: flex; flex-direction: column; gap: 40px; position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; }
-
-/* Tabs (em linha no desktop) */
-.nexus-tabs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
-.nexus-tab { display: flex; flex-direction: column; gap: 12px; padding: 16px; border-radius: var(--r-md); border: 1px solid transparent; cursor: pointer; transition: all 0.3s ease; background: rgba(255,255,255,0.01); align-items: flex-start; }
-.nexus-tab:hover { background: rgba(255, 255, 255, 0.03); }
-.nexus-tab.active { background: var(--surface); border-color: rgba(99,102,241,0.25); box-shadow: 0 8px 32px rgba(0,0,0,0.2), inset 0 0 0 1px rgba(99,102,241,0.1); }
-.ntab-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(255, 255, 255, 0.03); display: flex; align-items: center; justify-content: center; font-size: 20px; border: 1px solid var(--border); transition: all 0.3s; }
-.nexus-tab.active .ntab-icon { background: rgba(99,102,241,0.12); border-color: rgba(99,102,241,0.8); box-shadow: 0 0 24px rgba(99,102,241,0.3); }
-.ntab-info { display: flex; flex-direction: column; gap: 6px; }
-.ntab-title { font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 600; color: var(--text); transition: color 0.3s; line-height: 1.2; }
-.nexus-tab.active .ntab-title { color: #A5B4FC; }
-.ntab-desc { font-family: 'Inter', sans-serif; font-size: 12px; color: var(--text-2); line-height: 1.5; }
-
-/* UI NEXUS AI 2.0 - Liquid Glass Oficial */
-.nexus-mockup-wrapper {
-  position: relative; width: 100%; height: 620px; border-radius: 1.25rem; overflow: hidden;
-  background: #0B0F19; border: 1px solid rgba(255, 255, 255, 0.04);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.05);
-  display: flex; font-family: 'Inter', sans-serif;
-}
-
-/* Sidebar do Mockup Nexus */
-.nx-sidebar {
-  width: 240px; background: rgba(17, 24, 39, 0.6); backdrop-filter: blur(20px);
-  border-right: 1px solid rgba(255,255,255,0.04); display: flex; flex-direction: column; padding: 20px 0;
-}
-.nx-logo {
-  display: flex; align-items: center; gap: 10px; padding: 0 20px; margin-bottom: 30px; font-weight: 800; font-size: 15px; color: #fff; letter-spacing: -0.02em;
-}
-.nx-logo-icon { width: 24px; height: 24px; background: linear-gradient(135deg, #3B82F6, #6366F1); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
-.nx-logo-icon svg { width: 14px; height: 14px; fill: none; stroke: #fff; stroke-width: 2.5; }
-
-.nx-nav-section { margin-bottom: 20px; }
-.nx-nav-title { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 0.1em; padding: 0 20px; margin-bottom: 8px; }
-.nx-nav-item { display: flex; align-items: center; gap: 10px; padding: 10px 20px; font-size: 13px; color: #9ca3af; font-weight: 500; transition: all 0.2s; position: relative; }
-.nx-nav-item svg { width: 16px; height: 16px; stroke: currentColor; stroke-width: 2; fill: none; }
-.nx-nav-item.active { background: rgba(99,102,241,0.12); color: #A5B4FC; }
-.nx-active-bar { position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, #6366F1, #8B5CF6); box-shadow: 0 0 12px rgba(99,102,241,0.8); display: none; }
-.nx-nav-item.active .nx-active-bar { display: block; }
-
-/* Main Content do Mockup */
-.nx-main { flex: 1; display: flex; flex-direction: column; position: relative; z-index: 1; overflow: hidden; }
-.nx-bg-glow { position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%); top: -100px; right: -100px; pointer-events: none; z-index: 0; }
-
-.nx-header {
-  height: 60px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px;
-  background: rgba(17, 24, 39, 0.6); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.04); z-index: 2;
-}
-.nx-header-title { font-size: 14px; font-weight: 600; color: #fff; display: flex; align-items: center; gap: 8px; }
-.nx-header-title span { color: #9ca3af; font-weight: 400; }
-.nx-header-right { display: flex; align-items: center; gap: 16px; }
-.nx-user { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, #3B82F6, #6366F1); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #fff; border: 2px solid rgba(255,255,255,0.1); }
-
-.nx-content { flex: 1; padding: 24px; position: relative; z-index: 2; overflow: hidden; }
-.mockup-view { position: absolute; inset: 0; padding: 24px; opacity: 0; pointer-events: none; transform: scale(0.98) translateY(10px); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); display: flex; flex-direction: column; gap: 20px; }
-.mockup-view.active { opacity: 1; pointer-events: auto; transform: scale(1) translateY(0); }
-
-/* UI: Visão Geral (Dashboard Campanhas) */
-.nx-d-top { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.nx-d-card { background: linear-gradient(135deg, rgba(31,41,55,0.8), rgba(17,24,39,0.8)); border-radius: 12px; padding: 16px; border: 1px solid rgba(255,255,255,0.05); }
-.nx-d-label { font-size: 11px; color: #9ca3af; text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em; margin-bottom: 8px; }
-.nx-d-val { font-size: 24px; font-weight: 800; color: #fff; font-family: 'Outfit'; }
-.nx-table-wrap { flex: 1; background: rgba(17,24,39,0.5); border-radius: 12px; border: 1px solid rgba(255,255,255,0.03); overflow: hidden; display: flex; flex-direction: column; }
-.nx-table-head { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; padding: 12px 20px; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 11px; font-weight: 600; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em; }
-.nx-table-row { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.02); font-size: 13px; color: #e5e7eb; align-items: center; }
-.nx-status { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; background: rgba(16,185,129,0.1); color: #34d399; padding: 4px 10px; border-radius: 99px; border: 1px solid rgba(16,185,129,0.2); }
-.nx-status::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #34d399; }
-
-/* UI: Copy AI */
-.nx-copy-layout { display: flex; gap: 20px; height: 100%; }
-.nx-copy-left { width: 300px; background: rgba(31,41,55,0.4); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); padding: 20px; display: flex; flex-direction: column; gap: 16px; }
-.nx-input-grp { display: flex; flex-direction: column; gap: 8px; }
-.nx-input-lbl { font-size: 12px; color: #9ca3af; font-weight: 500; }
-.nx-input { background: rgba(17,24,39,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 10px 12px; font-size: 13px; color: #fff; }
-.nx-btn { background: linear-gradient(135deg, #3B82F6, #6366F1); color: #fff; font-size: 13px; font-weight: 600; padding: 12px; border-radius: 8px; text-align: center; margin-top: 10px; box-shadow: 0 4px 12px rgba(99,102,241,0.3); }
-.nx-copy-right { flex: 1; display: flex; flex-direction: column; gap: 16px; overflow-y: auto; padding-right: 10px; }
-.nx-copy-card { background: rgba(17,24,39,0.6); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 20px; border-left: 3px solid #6366F1; }
-.nx-copy-tag { display: inline-block; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: #818CF8; margin-bottom: 8px; font-weight: 700; }
-.nx-copy-text { font-size: 13px; color: #d1d5db; line-height: 1.6; }
-
-/* UI: Financeiro */
-.nx-fin-layout { display: flex; flex-direction: column; gap: 20px; height: 100%; }
-.nx-fin-chart { flex: 1; background: rgba(31,41,55,0.4); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); padding: 20px; display: flex; flex-direction: column; }
-.nx-fin-title { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 20px; }
-.nx-fin-bars { flex: 1; display: flex; align-items: flex-end; gap: 16px; justify-content: space-between; padding-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
-.nx-fin-bar { width: 100%; max-width: 40px; background: linear-gradient(0deg, #10B981, #34D399); border-radius: 4px 4px 0 0; position: relative; }
-.nx-fin-bar.despesa { background: linear-gradient(0deg, #EF4444, #F87171); width: 60%; margin: 0 auto; }
-.nx-fin-list { display: flex; flex-direction: column; gap: 10px; }
-.nx-fin-item { display: flex; justify-content: space-between; padding: 12px 16px; background: rgba(17,24,39,0.5); border-radius: 8px; border: 1px solid rgba(255,255,255,0.02); font-size: 13px; }
-.nx-fin-val-green { color: #34D399; font-weight: 600; }
-.nx-fin-val-red { color: #F87171; font-weight: 600; }
-
-/* UI: CRM KANBAN */
-.nx-kanban { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; height: 100%; }
-.nx-k-col { background: rgba(0,0,0,0.2); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 12px; border: 1px solid rgba(255,255,255,0.02); }
-.nx-k-title { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em; align-items: center; }
-.nx-k-badge { background: rgba(99,102,241,0.15); color: #A5B4FC; padding: 2px 8px; border-radius: 99px; font-size: 10px; border: 1px solid rgba(99,102,241,0.3); }
-.nx-k-card { background: rgba(31, 41, 55, 0.8); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 14px; font-size: 13px; color: #f3f4f6; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-.nx-k-name { font-weight: 600; margin-bottom: 4px; }
-.nx-k-sub { font-size: 11px; color: #9ca3af; }
-.nx-k-card.ai-active { border: 1px solid rgba(99,102,241,0.4); background: linear-gradient(180deg, rgba(99,102,241,0.1), rgba(31,41,55,0.8)); }
-.nx-k-card.ai-active .nx-k-sub { color: #818CF8; }
-
-/* UI: Estratégia Jurídica */
-.nx-strat-layout { display: flex; gap: 20px; height: 100%; }
-.nx-strat-card { flex: 1; background: rgba(31,41,55,0.4); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); padding: 24px; display: flex; flex-direction: column; gap: 16px; }
-.nx-s-header { font-size: 16px; font-weight: 600; color: #fff; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
-.nx-s-item { display: flex; flex-direction: column; gap: 6px; }
-.nx-s-q { font-size: 12px; font-weight: 600; color: #9ca3af; }
-.nx-s-a { font-size: 13px; color: #e5e7eb; background: rgba(17,24,39,0.8); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.02); }
-.nx-s-obj { border-left: 3px solid #EF4444; }
-.nx-s-res { border-left: 3px solid #10B981; margin-top: -6px; }
-
-@media(max-width: 992px) {
-  /* Fixes Nexus Mobile */
-  .nexus-tabs { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 16px; margin-bottom: 20px; }
-  .nexus-tab { min-width: 220px; flex-shrink: 0; scroll-snap-align: start; }
-  .nexus-mockup-wrapper { height: auto; min-height: 500px; }
-  .nx-sidebar { display: none; }
-  .nx-d-top { grid-template-columns: 1fr 1fr; }
-  .nx-table-head { display: none; }
-  .nx-table-row { grid-template-columns: 1fr; gap: 8px; padding: 12px; }
-  .nx-copy-layout { flex-direction: column; }
-  .nx-copy-left { width: 100%; }
-  .nx-m-layout { grid-template-columns: 1fr; }
-  .nx-m-right { border-left: none; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px; padding-left: 0; }
-  
-  /* Fixes Processo Mobile */
-  .proc-layout { grid-template-columns: 1fr; } 
-  .proc-mockup { display: flex; transform: scale(0.65); transform-origin: top center; margin-top: -30px; margin-bottom: -120px; } 
-  .proc-head { grid-template-columns: 1fr; gap: 24px; text-align: center; } 
-  .proc-head .eyebrow { justify-content: center; }
-}
 </style>
 </head>
 <body>
@@ -643,7 +477,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   <div class="hero-inner">
     <div class="hero-l">
       <div class="badge badge-blue"><span class="bdot"></span>Tráfego Jurídico de Alta Performance</div>
-      <p class="hero-kicker">Para escritórios cansados de <strong>depender apenas de indicaçÁµes</strong></p>
+      <p class="hero-kicker">Para escritórios cansados de <strong>depender apenas de indicações</strong></p>
       <h1 class="hero-h1"><span style="white-space: nowrap">Escale seu faturamento</span><br><span style="white-space: nowrap">com uma verdadeira</span><br><span class="accent" style="white-space: nowrap">máquina de contratos.</span></h1>
       <p class="hero-sub">Viver do "boca a boca" é lento e aterroriza o caixa. Nós desenhamos funis de captação que entregam clientes qualificados no seu WhatsApp todos os dias. Acelere o crescimento da sua banca de forma previsível e respeitando 100% a OAB.</p>
       <div class="hero-actions">
@@ -662,7 +496,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
         <div class="hcard-stats">
           <div class="hstat">
             <div class="hstat-n counter" data-target="14">0</div>
-            <div class="hstat-l">Contratos no 1Âº mês</div>
+            <div class="hstat-l">Contratos no 1º mês</div>
           </div>
           <div class="hstat">
             <div class="hstat-n counter" data-target="35">0</div>
@@ -674,7 +508,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
             <div class="hfat-l">Média de faturamento (4 meses)</div>
             <div class="hfat-v">R$66.000+</div>
           </div>
-          <div class="hfat-note">Ticket médio<br>R$1kâ€“3k</div>
+          <div class="hfat-note">Ticket médio<br>R$1k–3k</div>
         </div>
       </div>
       <div class="hmini-row">
@@ -691,7 +525,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   </div>
 </section>
 
-<!-- PORTFÁ“LIO BAR -->
+<!-- PORTFÓLIO BAR -->
 <div id="portfolio-bar">
   <div class="pb-inner">
     <div class="pb-stat reveal">
@@ -719,14 +553,14 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
     <div class="reveal">
       <div class="eyebrow">A realidade do previdenciário</div>
       <h2 class="dor-title">Você domina a lei.<br>Mas e os <span class="accent">novos clientes?</span></h2>
-      <p class="dor-sub">O advogado previdenciário enfrenta um desafio que vai além do processo â€” precisa de um fluxo constante de pessoas que buscam benefício e não sabem por onde começar. Essas pessoas estão no Meta Ads agora.</p>
+      <p class="dor-sub">O advogado previdenciário enfrenta um desafio que vai além do processo — precisa de um fluxo constante de pessoas que buscam benefício e não sabem por onde começar. Essas pessoas estão no Meta Ads agora.</p>
       <a href="#contato" class="btn btn-primary btn-arr">Quero esse fluxo no meu escritório</a>
     </div>
     <div class="reveal rd1">
       <div class="dor-items">
-        <div class="dor-item"><span class="dor-num">01</span><span class="dor-text">Você depende de indicação â€” <strong>e quando param de chegar, o caixa sente imediatamente.</strong></span></div>
-        <div class="dor-item"><span class="dor-num">02</span><span class="dor-text">Já tentou anunciar e só veio lead que nem sabia se tinha direito a nada â€” <strong>desperdiçando seu tempo.</strong></span></div>
-        <div class="dor-item"><span class="dor-num">03</span><span class="dor-text"><strong>Não dá pra anunciar de qualquer jeito</strong> â€” a OAB tem regras, e agência genérica não sabe disso.</span></div>
+        <div class="dor-item"><span class="dor-num">01</span><span class="dor-text">Você depende de indicação — <strong>e quando param de chegar, o caixa sente imediatamente.</strong></span></div>
+        <div class="dor-item"><span class="dor-num">02</span><span class="dor-text">Já tentou anunciar e só veio lead que nem sabia se tinha direito a nada — <strong>desperdiçando seu tempo.</strong></span></div>
+        <div class="dor-item"><span class="dor-num">03</span><span class="dor-text"><strong>Não dá pra anunciar de qualquer jeito</strong> — a OAB tem regras, e agência genérica não sabe disso.</span></div>
         <div class="dor-item"><span class="dor-num">04</span><span class="dor-text">Você não quer gastar em anúncio sem saber se está trazendo contrato de verdade.</span></div>
       </div>
     </div>
@@ -826,300 +660,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
           <div style="margin-left:auto"><span class="badge badge-blue">Geral</span></div>
         </div>
         <div class="depo-text" style="margin-top:16px;">
-          "O diferencial da X6 são os pareceres semanais, o controle diário e a adoção das melhores estratégias, <strong>tudo dentro do provimento da OAB</strong> e com muita transparência. O empenho e domínio das plataformas é incontestável. Á‰ um investimento que se paga muito rápido, gerando o maior número de leads qualificados possível."
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SEÁ‡ÁƒO NEXUS -->
-<section id="nexus">
-  <div class="wrap">
-    <div class="nexus-header reveal">
-      <span class="eyebrow">A Tecnologia por Trás</span>
-      <h2>Ecossistema <span class="accent" style="color: #818CF8;">Nexus AI</span></h2>
-      <p>O mesmo sistema proprietário utilizado internamente pelos nossos especialistas, agora operando nos bastidores da sua advocacia para garantir previsibilidade e alta conversão.</p>
-    </div>
-
-    <div class="nexus-container reveal rd1">
-      <!-- Topo: 5 Abas de Interação (Grid) -->
-      <div class="nexus-tabs">
-        <div class="nexus-tab active" data-target="m-dash">
-          <div class="ntab-icon">ðŸ“Š</div>
-          <div class="ntab-info">
-            <h3 class="ntab-title">Visão Geral</h3>
-            <p class="ntab-desc">Métricas de investimento, leads e custo real em campanhas de Ads.</p>
-          </div>
-        </div>
-        <div class="nexus-tab" data-target="m-copy">
-          <div class="ntab-icon">âœï¸</div>
-          <div class="ntab-info">
-            <h3 class="ntab-title">Nexus Copy AI</h3>
-            <p class="ntab-desc">IA criando múltiplas variaçÁµes de copy personalizadas para cada serviço.</p>
-          </div>
-        </div>
-        <div class="nexus-tab" data-target="m-fin">
-          <div class="ntab-icon">ðŸ’°</div>
-          <div class="ntab-info">
-            <h3 class="ntab-title">Gestão de Assinatura</h3>
-            <p class="ntab-desc">Controle transparente do seu plano: veja sua próxima renovação e histórico de faturas.</p>
-          </div>
-        </div>
-        <div class="nexus-tab" data-target="m-crm">
-          <div class="ntab-icon">ðŸ“‹</div>
-          <div class="ntab-info">
-            <h3 class="ntab-title">Gestão de Leads</h3>
-            <p class="ntab-desc">CRM kanban intuitivo para organizar os atendimentos e controlar todo o funil do escritório.</p>
-          </div>
-        </div>
-        <div class="nexus-tab" data-target="m-strat">
-          <div class="ntab-icon">ðŸ“š</div>
-          <div class="ntab-info">
-            <h3 class="ntab-title">Estratégia Jurídica</h3>
-            <p class="ntab-desc">Formulário de mapeamento e narrativas validadas contra objeçÁµes do cliente.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mockup Visual Glassmorphism -->
-      <div class="nexus-mockup-wrapper">
-        <!-- Sidebar Fidedigna do Nexus -->
-        <div class="nx-sidebar">
-          <div class="nx-logo">
-            <div class="nx-logo-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
-            <span>NEXUS AI</span>
-          </div>
-          <div class="nx-nav-section">
-            <div class="nx-nav-title">BI & Performance</div>
-            <div class="nx-nav-item active" id="sidebar-item-dash">
-              <div class="nx-active-bar"></div>
-              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-              Visão Geral / Ads
-            </div>
-          </div>
-          <div class="nx-nav-section">
-            <div class="nx-nav-title">Comercial & Vendas</div>
-            <div class="nx-nav-item" id="sidebar-item-crm">
-              <div class="nx-active-bar"></div>
-              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7v10M16 7v10"/></svg>
-              CRM de Leads
-            </div>
-          </div>
-          <div class="nx-nav-section">
-            <div class="nx-nav-title">Inteligência Artificial</div>
-            <div class="nx-nav-item" id="sidebar-item-copy">
-              <div class="nx-active-bar"></div>
-              <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.5-6.3-4.7-6.3 4.7 2.3-7.5-6-4.6h7.6z" stroke-width="1.5"/></svg>
-              Nexus Copy AI
-            </div>
-          </div>
-          <div class="nx-nav-section">
-            <div class="nx-nav-title">Gestão</div>
-            <div class="nx-nav-item" id="sidebar-item-fin">
-              <div class="nx-active-bar"></div>
-              <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-              Financeiro
-            </div>
-          </div>
-          <div class="nx-nav-section">
-            <div class="nx-nav-title">Estratégia</div>
-            <div class="nx-nav-item" id="sidebar-item-strat">
-              <div class="nx-active-bar"></div>
-              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z"/></svg>
-              Mapeamento
-            </div>
-          </div>
-        </div>
-
-        <div class="nx-main">
-          <div class="nx-bg-glow"></div>
-          
-          <div class="nx-header">
-            <div class="nx-header-title">Lobby Central <span>/ Workspace</span></div>
-            <div class="nx-header-right">
-              <div class="nx-user">MD</div>
-            </div>
-          </div>
-
-          <div class="nx-content">
-            <!-- TELA 1: DASHBOARD / VISÁƒO GERAL -->
-            <div class="mockup-view active" id="m-dash">
-              <div class="nx-d-top">
-                <div class="nx-d-card">
-                  <div class="nx-d-label">Investimento (Meta)</div>
-                  <div class="nx-d-val">R$ 2.450</div>
-                </div>
-                <div class="nx-d-card">
-                  <div class="nx-d-label">Leads Gerados</div>
-                  <div class="nx-d-val" style="color:#60A5FA;">544</div>
-                </div>
-                <div class="nx-d-card">
-                  <div class="nx-d-label">CPL Médio</div>
-                  <div class="nx-d-val" style="color:#34D399;">R$ 4,50</div>
-                </div>
-                <div class="nx-d-card">
-                  <div class="nx-d-label">Contratos Fechados</div>
-                  <div class="nx-d-val" style="color:#FBBF24;">14</div>
-                </div>
-              </div>
-              <div class="nx-table-wrap">
-                <div class="nx-table-head">
-                  <div>Nome da Campanha</div>
-                  <div>Investimento</div>
-                  <div>Leads</div>
-                  <div>Status</div>
-                </div>
-                <div class="nx-table-row">
-                  <div>[BPC/LOAS] Aquisição Frio</div>
-                  <div>R$ 1.200,00</div>
-                  <div>310</div>
-                  <div><span class="nx-status">Ativa</span></div>
-                </div>
-                <div class="nx-table-row">
-                  <div>[Aposentadoria Rural] Regional</div>
-                  <div>R$ 800,00</div>
-                  <div>185</div>
-                  <div><span class="nx-status">Ativa</span></div>
-                </div>
-                <div class="nx-table-row">
-                  <div>[Remarcação] Retargeting 15d</div>
-                  <div>R$ 450,00</div>
-                  <div>49</div>
-                  <div><span class="nx-status">Ativa</span></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- TELA 2: NEXUS COPY AI -->
-            <div class="mockup-view" id="m-copy">
-              <div class="nx-copy-layout">
-                <div class="nx-copy-left">
-                  <div class="nx-input-grp">
-                    <span class="nx-input-lbl">Serviço Jurídico</span>
-                    <input type="text" class="nx-input" value="BPC/LOAS" readonly>
-                  </div>
-                  <div class="nx-input-grp">
-                    <span class="nx-input-lbl">Á‚ngulo / Dor</span>
-                    <input type="text" class="nx-input" value="Doença grave incapacitante" readonly>
-                  </div>
-                  <div class="nx-btn">âœ¨ Gerar VariaçÁµes IA</div>
-                </div>
-                <div class="nx-copy-right">
-                  <div class="nx-copy-card">
-                    <span class="nx-copy-tag">Variação 1: Foco na Dor</span>
-                    <div class="nx-copy-text">Você sofre com uma doença grave e não consegue mais trabalhar para sustentar sua família? O INSS pode estar negando um benefício que é seu por direito (BPC/LOAS no valor de 1 salário mínimo). Fale com um especialista agora.</div>
-                  </div>
-                  <div class="nx-copy-card" style="border-left-color: #10B981;">
-                    <span class="nx-copy-tag" style="color: #34D399;">Variação 2: Foco em Autoridade</span>
-                    <div class="nx-copy-text">Já ajudamos centenas de famílias a reverterem negativas injustas no INSS. Se você tem mais de 65 anos ou uma deficiência/doença limitante, nossa equipe pode analisar o seu caso gratuitamente hoje mesmo.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- TELA 3: FINANCEIRO -->
-            <div class="mockup-view" id="m-fin">
-              <div class="nx-fin-layout">
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-                  <div style="background:rgba(31,41,55,0.4);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:20px;">
-                     <div style="font-size:11px;color:#9ca3af;text-transform:uppercase;font-weight:600;margin-bottom:8px;">Plano Atual</div>
-                     <div style="font-size:18px;font-weight:700;color:#fff;">Gestão Completa (Meta Ads)</div>
-                     <div style="margin-top:12px;font-size:12px;color:#34D399;display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" fill="none" stroke="currentColor"/><path d="M22 4L12 14.01l-3-3" fill="none" stroke="currentColor"/></svg> Ativo</div>
-                  </div>
-                  <div style="background:rgba(31,41,55,0.4);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:20px;">
-                     <div style="font-size:11px;color:#9ca3af;text-transform:uppercase;font-weight:600;margin-bottom:8px;">Próxima Renovação</div>
-                     <div style="font-size:18px;font-weight:700;color:#fff;">15 de Agosto, 2026</div>
-                     <div style="margin-top:12px;font-size:12px;color:#9ca3af;">Valor da Fatura: R$ 1.500,00</div>
-                  </div>
-                </div>
-                
-                <div style="flex:1;background:rgba(17,24,39,0.5);border-radius:12px;border:1px solid rgba(255,255,255,0.03);display:flex;flex-direction:column;padding:20px;">
-                  <div style="font-size:14px;font-weight:600;color:#fff;margin-bottom:16px;">Histórico de Faturas</div>
-                  <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;">
-                    <div style="display:flex;justify-content:space-between;padding:12px 16px;background:rgba(255,255,255,0.02);border-radius:8px;font-size:13px;align-items:center;">
-                      <div>
-                        <div style="color:#e5e7eb;font-weight:500;margin-bottom:4px;">Mensalidade - Julho 2026</div>
-                        <div style="color:#9ca3af;font-size:11px;">15/07/2026 via Cartão de Crédito</div>
-                      </div>
-                      <div style="display:flex;align-items:center;gap:12px;">
-                        <span style="color:#fff;font-weight:600;">R$ 1.500,00</span>
-                        <span style="background:rgba(16,185,129,0.1);color:#34D399;padding:4px 8px;border-radius:4px;font-size:10px;font-weight:700;text-transform:uppercase;">Pago</span>
-                      </div>
-                    </div>
-                    <div style="display:flex;justify-content:space-between;padding:12px 16px;background:rgba(255,255,255,0.02);border-radius:8px;font-size:13px;align-items:center;">
-                      <div>
-                        <div style="color:#e5e7eb;font-weight:500;margin-bottom:4px;">Mensalidade - Junho 2026</div>
-                        <div style="color:#9ca3af;font-size:11px;">15/06/2026 via PIX</div>
-                      </div>
-                      <div style="display:flex;align-items:center;gap:12px;">
-                        <span style="color:#fff;font-weight:600;">R$ 1.500,00</span>
-                        <span style="background:rgba(16,185,129,0.1);color:#34D399;padding:4px 8px;border-radius:4px;font-size:10px;font-weight:700;text-transform:uppercase;">Pago</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- TELA 4: CRM KANBAN -->
-            <div class="mockup-view" id="m-crm">
-              <div class="nx-kanban">
-                <div class="nx-k-col">
-                  <div class="nx-k-title">Novos Leads <span class="nx-k-badge">8</span></div>
-                  <div class="nx-k-card">
-                    <div class="nx-k-name">João Souza</div>
-                    <div class="nx-k-sub">Aposentadoria Rural</div>
-                  </div>
-                  <div class="nx-k-card">
-                    <div class="nx-k-name">Maria de Fátima</div>
-                    <div class="nx-k-sub">BPC/LOAS</div>
-                  </div>
-                </div>
-                <div class="nx-k-col">
-                  <div class="nx-k-title">Em Atendimento <span class="nx-k-badge" style="background:#FBBF24;color:#fff;border:none">3</span></div>
-                  <div class="nx-k-card">
-                    <div class="nx-k-name">Carlos Teixeira</div>
-                    <div class="nx-k-sub">Aguardando envio de PPP</div>
-                  </div>
-                </div>
-                <div class="nx-k-col">
-                  <div class="nx-k-title">Agendados <span class="nx-k-badge">2</span></div>
-                  <div class="nx-k-card" style="border-left: 3px solid #6366F1;">
-                    <div class="nx-k-name">Ana Paula Silva</div>
-                    <div class="nx-k-sub">ðŸ“… Reunião Hoje 14h</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- TELA 5: ESTRATÁ‰GIA / NARRATIVAS -->
-            <div class="mockup-view" id="m-strat">
-              <div class="nx-strat-layout">
-                <div class="nx-strat-card">
-                  <div class="nx-s-header">Formulário de Mapeamento Jurídico</div>
-                  <div class="nx-s-item">
-                    <span class="nx-s-q">Ticket Médio dos Honorários Iniciais?</span>
-                    <span class="nx-s-a">R$ 2.500 a R$ 5.000</span>
-                  </div>
-                  <div class="nx-s-item">
-                    <span class="nx-s-q">Maior diferencial do escritório?</span>
-                    <span class="nx-s-a">Atendimento humanizado e análise de viabilidade em até 24h.</span>
-                  </div>
-                </div>
-                <div class="nx-strat-card">
-                  <div class="nx-s-header">Matriz de Narrativas & ObjeçÁµes</div>
-                  <div class="nx-s-item">
-                    <span class="nx-s-q nx-s-obj" style="padding-left:8px; border-left-color:#EF4444;">Objeção do Lead: "Não tenho como pagar agora"</span>
-                    <span class="nx-s-a nx-s-res">Narrativa Ativa: "Nós só cobramos os honorários finais no êxito. O valor inicial é apenas para cobrir as custas de diligência (R$ 300) que podem ser parceladas."</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
+          "O diferencial da X6 são os pareceres semanais, o controle diário e a adoção das melhores estratégias, <strong>tudo dentro do provimento da OAB</strong> e com muita transparência. O empenho e domínio das plataformas é incontestável. É um investimento que se paga muito rápido, gerando o maior número de leads qualificados possível."
         </div>
       </div>
     </div>
@@ -1132,23 +673,23 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
     <div class="reveal">
       <div class="eyebrow">Outros segmentos</div>
       <h2 style="font-size:clamp(26px,3.5vw,42px);color:var(--text)">Não é previdenciário?<br><span class="accent">A gente também atende.</span></h2>
-      <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-top:12px;max-width:560px">Cada nicho tem sua estratégia e seu público. A metodologia é a mesma â€” o que muda é o ângulo da campanha.</p>
+      <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-top:12px;max-width:560px">Cada nicho tem sua estratégia e seu público. A metodologia é a mesma — o que muda é o ângulo da campanha.</p>
     </div>
     <div class="outros-grid">
       <div class="oseg reveal">
         <div class="oseg-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
         <div class="oseg-title">Direito de Família</div>
-        <p class="oseg-text">Divórcio, guarda, inventário â€” pessoas em situação emocional que buscam ajuda e encontram sua campanha no momento certo.</p>
+        <p class="oseg-text">Divórcio, guarda, inventário — pessoas em situação emocional que buscam ajuda e encontram sua campanha no momento certo.</p>
       </div>
       <div class="oseg reveal rd1">
         <div class="oseg-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
         <div class="oseg-title">Trabalhista</div>
-        <p class="oseg-text">Rescisão indevida, horas extras, assédio â€” trabalhadores demitidos buscando entender seus direitos agora.</p>
+        <p class="oseg-text">Rescisão indevida, horas extras, assédio — trabalhadores demitidos buscando entender seus direitos agora.</p>
       </div>
       <div class="oseg reveal rd2">
         <div class="oseg-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <div class="oseg-title">Civil &amp; Consumidor</div>
-        <p class="oseg-text">Cobranças indevidas, danos morais, contratos â€” volume alto de lead com custo de aquisição baixo.</p>
+        <p class="oseg-text">Cobranças indevidas, danos morais, contratos — volume alto de lead com custo de aquisição baixo.</p>
       </div>
     </div>
   </div>
@@ -1159,77 +700,16 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
   <div class="proc-inner">
     <div class="proc-head reveal">
       <div>
-        <div class="eyebrow">A Metodologia</div>
-        <h2 style="font-size:clamp(26px,3.5vw,42px);color:var(--text)">Nosso processo para<br><span class="accent">qualquer vertente.</span></h2>
+        <div class="eyebrow">Como funciona</div>
+        <h2 style="font-size:clamp(26px,3.5vw,42px);color:var(--text)">Processo criado<br>para <span class="accent">advocacia.</span></h2>
       </div>
-      <p class="proc-desc">Não importa se sua atuação é Trabalhista, Previdenciário ou Família. Nossa engenharia de captação é moldada sob medida para o cenário do seu escritório.</p>
+      <p class="proc-desc">Nada de template genérico. Cada campanha desenhada para o seu nicho, com copy que respeita as normas do Código de Ética da OAB.</p>
     </div>
-    <div class="proc-layout reveal rd1">
-      <div class="proc-steps">
-        <div class="p-step active" data-step="1">
-          <div class="p-step-n">01</div>
-          <div class="p-step-content">
-            <h4>Mapeamento Personalizado</h4>
-            <p>Estudo aprofundado do seu escritório através do nosso formulário inteligente dentro do Nexus AI.</p>
-          </div>
-        </div>
-        <div class="p-step" data-step="2">
-          <div class="p-step-n">02</div>
-          <div class="p-step-content">
-            <h4>Análise de Cenário</h4>
-            <p>Leitura de mercado com Matriz SWOT e Matriz BCG para identificar oportunidades ocultas e serviços estrelas.</p>
-          </div>
-        </div>
-        <div class="p-step" data-step="3">
-          <div class="p-step-n">03</div>
-          <div class="p-step-content">
-            <h4>Desenho da Estratégia</h4>
-            <p>Identificação dos serviços mais lucrativos baseados em benchmarking das melhores bancas do mercado jurídico.</p>
-          </div>
-        </div>
-        <div class="p-step" data-step="4">
-          <div class="p-step-n">04</div>
-          <div class="p-step-content">
-            <h4>Seleção de Canais</h4>
-            <p>Estabelecimento das melhores plataformas de anúncio (Google Ads, Meta Ads) para o seu público-alvo.</p>
-          </div>
-        </div>
-        <div class="p-step" data-step="5">
-          <div class="p-step-n">05</div>
-          <div class="p-step-content">
-            <h4>Criação de Narrativas</h4>
-            <p>Desenvolvimento de copy persuasiva alinhada aos limites éticos da OAB, projetada para converter leads qualificados.</p>
-          </div>
-        </div>
-        <div class="p-step" data-step="6">
-          <div class="p-step-n">06</div>
-          <div class="p-step-content">
-            <h4>Construção do Funil</h4>
-            <p>Lançamento da máquina de vendas ponta a ponta: do anúncio ao CRM (Nexus AI) e fechamento de contrato.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="proc-mockup">
-        <div class="pm-lines">
-          <svg viewBox="0 0 400 400">
-            <line x1="200" y1="200" x2="200" y2="60" class="pm-line pl-1 active" />
-            <line x1="200" y1="200" x2="340" y2="140" class="pm-line pl-2" />
-            <line x1="200" y1="200" x2="340" y2="260" class="pm-line pl-3" />
-            <line x1="200" y1="200" x2="200" y2="340" class="pm-line pl-4" />
-            <line x1="200" y1="200" x2="60" y2="260" class="pm-line pl-5" />
-            <line x1="200" y1="200" x2="60" y2="140" class="pm-line pl-6" />
-          </svg>
-        </div>
-        <div class="pm-center">Nexus AI</div>
-        
-        <div class="pm-node pm-n1 active" data-node="1">ðŸ“ Mapeamento</div>
-        <div class="pm-node pm-n2" data-node="2">ðŸ“Š Matriz SWOT</div>
-        <div class="pm-node pm-n3" data-node="3">ðŸŽ¯ Estratégia</div>
-        <div class="pm-node pm-n4" data-node="4">ðŸŒ Canais (Ads)</div>
-        <div class="pm-node pm-n5" data-node="5">âœï¸ Narrativas</div>
-        <div class="pm-node pm-n6" data-node="6">ðŸš€ Funil Ativo</div>
-      </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-n">01</div><div class="step-iw"><svg class="step-ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><div class="step-title">Diagnóstico</div><p class="step-desc">Mapeamos sua especialidade, ticket médio e o perfil do cliente que você quer atrair.</p></div>
+      <div class="step reveal rd1"><div class="step-n">02</div><div class="step-iw"><svg class="step-ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div><div class="step-title">Estrutura</div><p class="step-desc">Criativos, copy e página criados dentro das normas da OAB — sem risco disciplinar.</p></div>
+      <div class="step reveal rd2"><div class="step-n">03</div><div class="step-iw"><svg class="step-ic" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div><div class="step-title">Ativação</div><p class="step-desc">Campanha no ar com acompanhamento diário e otimização baseada em dados reais.</p></div>
+      <div class="step reveal rd3"><div class="step-n">04</div><div class="step-iw"><svg class="step-ic" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><div class="step-title">Resultado</div><p class="step-desc">Relatório com CAC real e métricas completas no dashboard Nexus AI.</p></div>
     </div>
   </div>
 </section>
@@ -1268,23 +748,18 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
     <div class="reveal rd1">
       <div class="eyebrow">Nossa História</div>
       <h2 class="gestor-title">Quem vai construir o seu novo<br><span class="accent">posicionamento digital.</span></h2>
-      
-      <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-top:16px;margin-bottom:12px;">Nós somos a <strong>Agência X6</strong>, uma assessoria estratégica com foco exclusivo em alavancar bancas de advocacia. Nossa missão nasceu de uma constatação simples: excelentes advogados estão ficando para trás por dependerem exclusivamente do imprevisível "boca a boca".</p>
-      
-      <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-bottom:24px;">Através de campanhas de tráfego pago de alta performance (Meta Ads) e rigorosamente <strong>alinhadas ao Código de Á‰tica da OAB</strong>, atraímos pessoas que já buscam ativamente por seus direitos. Mais do que gerar cliques, nós implementamos o nosso ecossistema proprietário, o <strong>Nexus AI</strong>, que atua como um CRM centralizando e organizando todo o seu funil de atendimento. Nós entregamos a máquina de previsibilidade que o seu escritório precisa para escalar o faturamento de verdade.</p>
-
       <div class="g-stats" style="grid-template-columns: repeat(3, 1fr); max-width: 600px; gap: 24px; margin-top:32px;">
         <div class="gs" style="text-align: left; background: none; border: none; padding: 0;">
           <div class="gs-n" style="font-family: 'Outfit', sans-serif; font-size: 44px; font-weight: 700; color: var(--blue-bright); line-height: 1; margin-bottom: 6px;">R$660k+</div>
-          <div class="gs-l" style="font-size: 12px; color: var(--text-3); line-height: 1.5;">Investimento gerenciado</div>
+          <div class="gs-l" style="font-size: 12px; color: var(--text-3); line-height: 1.5;">Investimento total</div>
         </div>
         <div class="gs" style="text-align: left; background: none; border: none; padding: 0; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 24px;">
           <div class="gs-n" style="font-family: 'Outfit', sans-serif; font-size: 44px; font-weight: 700; color: var(--blue-bright); line-height: 1; margin-bottom: 6px;">+50</div>
-          <div class="gs-l" style="font-size: 12px; color: var(--text-3); line-height: 1.5;">Bancas atendidas</div>
+          <div class="gs-l" style="font-size: 12px; color: var(--text-3); line-height: 1.5;">Empresas atendidas</div>
         </div>
         <div class="gs" style="text-align: left; background: none; border: none; padding: 0; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 24px;">
-          <div class="gs-n" style="font-family: 'Outfit', sans-serif; font-size: 44px; font-weight: 700; color: var(--blue-bright); line-height: 1; margin-bottom: 6px;">45k+</div>
-          <div class="gs-l" style="font-size: 12px; color: var(--text-3); line-height: 1.5;">Leads qualificados gerados</div>
+          <div class="gs-n" style="font-family: 'Outfit', sans-serif; font-size: 44px; font-weight: 700; color: var(--blue-bright); line-height: 1; margin-bottom: 6px;">35+</div>
+          <div class="gs-l" style="font-size: 12px; color: var(--text-3); line-height: 1.5;">Modelos de negócio</div>
         </div>
       </div>
     </div>
@@ -1299,11 +774,11 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
       <h2 style="font-size:clamp(24px,3.5vw,40px);color:var(--text)">O que todo advogado pergunta<br>antes de começar.</h2>
     </div>
     <div class="faq-list reveal">
-      <div class="faq-item"><div class="faq-q">Isso não viola o Código de Á‰tica da OAB?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Não. Toda campanha segue as ResoluçÁµes do CFO-OAB sobre publicidade advocatícia. Trabalhamos com copy informativo, sem mercantilização. Antes de qualquer peça ir ao ar, verificamos dentro das normas.</p></div></div>
-      <div class="faq-item"><div class="faq-q">Quanto preciso investir em anúncios além da gestão?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Recomendamos mínimo R$800/mês em mídia para resultados consistentes. Para escalar, R$1.500â€“R$3.000/mês gera volume expressivo de leads qualificados.</p></div></div>
-      <div class="faq-item"><div class="faq-q">O lead que vai chegar já entende o processo?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Trabalhamos para entregar leads que já manifestaram interesse ativo. O trabalho de qualificação começa na segmentação e no copy â€” mas a conversão final depende do atendimento do seu escritório. Quanto melhor o atendimento, maior a taxa de contrato.</p></div></div>
-      <div class="faq-item"><div class="faq-q">Preciso ter site ou landing page já pronta?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Não. A landing page está inclusa no plano. Alternativamente, podemos usar formulário nativo do Meta â€” você começa do zero, sem nenhum ativo prévio.</p></div></div>
-      <div class="faq-item"><div class="faq-q">Tem fidelidade ou contrato mínimo?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Compromisso de 3 meses â€” menos que isso não entrega resultado consistente. Após o período, renovação mensal com 30 dias de aviso para cancelar.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Isso não viola o Código de Ética da OAB?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Não. Toda campanha segue as Resoluções do CFO-OAB sobre publicidade advocatícia. Trabalhamos com copy informativo, sem mercantilização. Antes de qualquer peça ir ao ar, verificamos dentro das normas.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Quanto preciso investir em anúncios além da gestão?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Recomendamos mínimo R$800/mês em mídia para resultados consistentes. Para escalar, R$1.500–R$3.000/mês gera volume expressivo de leads qualificados.</p></div></div>
+      <div class="faq-item"><div class="faq-q">O lead que vai chegar já entende o processo?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Trabalhamos para entregar leads que já manifestaram interesse ativo. O trabalho de qualificação começa na segmentação e no copy — mas a conversão final depende do atendimento do seu escritório. Quanto melhor o atendimento, maior a taxa de contrato.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Preciso ter site ou landing page já pronta?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Não. A landing page está inclusa no plano. Alternativamente, podemos usar formulário nativo do Meta — você começa do zero, sem nenhum ativo prévio.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Tem fidelidade ou contrato mínimo?<svg class="faq-ic" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Compromisso de 3 meses — menos que isso não entrega resultado consistente. Após o período, renovação mensal com 30 dias de aviso para cancelar.</p></div></div>
     </div>
   </div>
 </section>
@@ -1312,7 +787,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
 <div id="cta">
   <div class="cta-in reveal">
     <h2 class="cta-title">Pronto para ter um fluxo constante de novos casos?</h2>
-    <p class="cta-sub">Preencha o formulário. Retornamos em até 24h â€” sem reunião obrigatória, sem compromisso.</p>
+    <p class="cta-sub">Preencha o formulário. Retornamos em até 24h — sem reunião obrigatória, sem compromisso.</p>
     <div class="cta-btns">
       <a href="#contato" class="btn btn-white btn-arr">Quero mais contratos</a>
       <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-gw btn-arr">Falar no WhatsApp</a>
@@ -1326,7 +801,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
     <div class="reveal">
       <div class="eyebrow">Contato</div>
       <h2 class="form-title">Vamos conversar sobre<br>o seu <em>escritório.</em></h2>
-      <p class="form-desc">Preencha o formulário. Retornamos em até 24h por WhatsApp â€” diagnóstico gratuito, sem compromisso.</p>
+      <p class="form-desc">Preencha o formulário. Retornamos em até 24h por WhatsApp — diagnóstico gratuito, sem compromisso.</p>
       <div class="form-gs">
         <div class="fg"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>Resposta em até 24h por WhatsApp</div>
         <div class="fg"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>Diagnóstico gratuito antes de qualquer proposta</div>
@@ -1342,7 +817,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);background:var(--bg)
         </div>
         <div class="form-row">
           <div class="field"><label>Email</label><input type="email" placeholder="joao@escritorio.adv.br"></div>
-          <div class="field"><label>Área de atuação</label><select required><option value="" disabled selected>Selecione</option><option>Previdenciário</option><option>Direito de Família</option><option>Trabalhista</option><option>Civil</option><option>Outra área</option></select></div>
+          <div class="field"><label>Área de atuação</label><select required><option value="" disabled selected>Selecione</option><option>Previdenciário</option><option>Direito de Família</option><option>Trabalhista</option><option>Civil</option><option>Outra área</option></select></div>
         </div>
         <div class="form-row">
           <div class="field"><label>Expectativa de investimento/mês</label><select required><option value="" disabled selected>Selecione</option><option>Até R$ 1.000</option><option>R$ 1.000 a R$ 3.000</option><option>R$ 3.000 a R$ 5.000</option><option>Acima de R$ 5.000</option></select></div>
@@ -1532,64 +1007,5 @@ window.addEventListener('click', (e) => {
   if (e.target === m) closeModal();
 });
 </script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.nexus-tab');
-    const views = document.querySelectorAll('.mockup-view');
-    
-    function activateTab(targetId, tabElement) {
-      tabs.forEach(t => t.classList.remove('active'));
-      views.forEach(v => v.classList.remove('active'));
-      
-      tabElement.classList.add('active');
-      const targetView = document.getElementById(targetId);
-      if(targetView) targetView.classList.add('active');
-
-      // Sincronizar Sidebar do Mockup
-      const navItems = document.querySelectorAll('.nx-nav-item');
-      navItems.forEach(i => i.classList.remove('active'));
-      const activeNavId = targetId.replace('m-', 'sidebar-item-');
-      const activeNav = document.getElementById(activeNavId);
-      if(activeNav) activeNav.classList.add('active');
-      
-      // Animação extra para os gráficos financeiros
-      if(targetId === 'm-fin') {
-        const bars = document.querySelectorAll('.nx-fin-bar');
-        bars.forEach(bar => {
-          const height = bar.style.height;
-          bar.style.height = '0%';
-          setTimeout(() => { bar.style.height = height; }, 50);
-        });
-      }
-    }
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', function() {
-        const target = this.getAttribute('data-target');
-        activateTab(target, this);
-      });
-    });
-
-    // Animação do Processo (Mockup Animado)
-    let currentProcStep = 1;
-    setInterval(() => {
-      document.querySelectorAll('.p-step').forEach(el => el.classList.remove('active'));
-      document.querySelectorAll('.pm-node').forEach(el => el.classList.remove('active'));
-      document.querySelectorAll('.pm-line').forEach(el => el.classList.remove('active'));
-      
-      currentProcStep++;
-      if(currentProcStep > 6) currentProcStep = 1;
-      
-      const stepEl = document.querySelector(`.p-step[data-step="${currentProcStep}"]`);
-      const nodeEl = document.querySelector(`.pm-node[data-node="${currentProcStep}"]`);
-      const lineEl = document.querySelector(`.pm-line.pl-${currentProcStep}`);
-      
-      if(stepEl) stepEl.classList.add('active');
-      if(nodeEl) nodeEl.classList.add('active');
-      if(lineEl) lineEl.classList.add('active');
-    }, 2500);
-  });
-</script>
 </body>
 </html>
-
