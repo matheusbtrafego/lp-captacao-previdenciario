@@ -423,6 +423,30 @@ input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 
 input::placeholder,textarea::placeholder{color:var(--text-3)}
 select option{background:#080e1c;color:var(--text);font-size:14px;padding:12px}
 select option[disabled]{display:none}
+
+/* CUSTOM SELECT */
+.custom-select-wrapper { position: relative; width: 100%; user-select: none; }
+.custom-select {
+  background: rgba(255,255,255,.04); border: 1px solid var(--border); border-radius: var(--r-sm);
+  color: var(--text-3); font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 300;
+  padding: 12px 40px 12px 14px; cursor: pointer; transition: all .2s;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat; background-position: right 14px center; background-size: 16px;
+}
+.custom-select.has-value { color: var(--text); }
+.custom-select.open { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(37,99,235,.15); background: rgba(255,255,255,.06); }
+.custom-options {
+  position: absolute; top: calc(100% + 4px); left: 0; right: 0; background: #0b1325;
+  border: 1px solid var(--border); border-radius: var(--r-sm); box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  z-index: 99; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all .2s;
+  max-height: 250px; overflow-y: auto;
+}
+.custom-options.open { opacity: 1; visibility: visible; transform: translateY(0); }
+.custom-option { padding: 12px 14px; color: var(--text-2); font-size: 14px; cursor: pointer; transition: background .2s; border-bottom: 1px solid rgba(255,255,255,.03); }
+.custom-option:last-child { border-bottom: none; }
+.custom-option:hover { background: rgba(37,99,235,.15); color: #fff; }
+select.hidden-select { position: absolute; opacity: 0; pointer-events: none; height: 0; width: 0; }
+
 textarea{resize:vertical;min-height:80px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .form-sub{background:var(--blue);color:#fff;border:none;border-radius:var(--r-pill);padding:15px;font-family:'Inter',sans-serif;font-size:14px;cursor:pointer;transition:all .2s;box-shadow:var(--sh-blue);width:100%;margin-top:4px}
@@ -1442,8 +1466,64 @@ document.querySelectorAll('.faq-item').forEach(item=>{
   });
 });
 
-// FORM
-document.getElementById('contactForm').addEventListener('submit',e=>{
+  // FORM
+  function initCustomSelects(container) {
+    container.querySelectorAll('select').forEach(select => {
+      if (select.classList.contains('hidden-select')) return;
+      const wrapper = document.createElement('div');
+      wrapper.className = 'custom-select-wrapper';
+      select.parentNode.insertBefore(wrapper, select);
+      wrapper.appendChild(select);
+      select.classList.add('hidden-select');
+      
+      const customSelect = document.createElement('div');
+      customSelect.className = 'custom-select';
+      
+      const selectedOption = select.querySelector('option:checked') || select.querySelector('option');
+      customSelect.textContent = selectedOption.textContent;
+      if (select.value) customSelect.classList.add('has-value');
+      
+      const optionsList = document.createElement('div');
+      optionsList.className = 'custom-options';
+      
+      Array.from(select.options).forEach(option => {
+        if (option.disabled) return;
+        const optDiv = document.createElement('div');
+        optDiv.className = 'custom-option';
+        optDiv.textContent = option.textContent;
+        optDiv.addEventListener('click', () => {
+          customSelect.textContent = option.textContent;
+          customSelect.classList.add('has-value');
+          select.value = option.value || option.textContent;
+          optionsList.classList.remove('open');
+          customSelect.classList.remove('open');
+        });
+        optionsList.appendChild(optDiv);
+      });
+      
+      wrapper.appendChild(customSelect);
+      wrapper.appendChild(optionsList);
+      
+      customSelect.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = optionsList.classList.contains('open');
+        document.querySelectorAll('.custom-options').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.custom-select').forEach(el => el.classList.remove('open'));
+        if (!isOpen) {
+          optionsList.classList.add('open');
+          customSelect.classList.add('open');
+        }
+      });
+    });
+  }
+
+  initCustomSelects(document);
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.custom-options').forEach(el => el.classList.remove('open'));
+    document.querySelectorAll('.custom-select').forEach(el => el.classList.remove('open'));
+  });
+
+  document.getElementById('contactForm').addEventListener('submit',e=>{
   e.preventDefault();
   const btn=e.target.querySelector('.form-sub');
   btn.textContent='Enviado!';
@@ -1503,11 +1583,22 @@ document.body.insertAdjacentHTML('beforeend', modalHTML);
 const formCard = document.querySelector('.form-card');
 if(formCard) {
   const clone = formCard.cloneNode(true);
-  clone.classList.remove('reveal', 'rd1', 'in');
+  clone.style.position = 'relative';
+  clone.style.zIndex = '1';
   clone.style.boxShadow = '0 20px 50px rgba(0,0,0,0.5)';
   clone.style.margin = '0';
   clone.querySelector('form').id = 'modalContactForm';
+  
+  // Remove cloned custom select wrappers to re-initialize them properly
+  clone.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
+    const select = wrapper.querySelector('select');
+    select.classList.remove('hidden-select');
+    wrapper.parentNode.insertBefore(select, wrapper);
+    wrapper.remove();
+  });
+  
   document.getElementById('modalFormContainer').appendChild(clone);
+  initCustomSelects(clone);
 
   document.getElementById('modalContactForm').addEventListener('submit',e=>{
     e.preventDefault();
