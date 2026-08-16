@@ -2035,11 +2035,71 @@ document.querySelectorAll('.gtm-cta').forEach(btn => {
 // Evento no formulário de contato (Lead)
 const contactForm = document.getElementById('contactForm');
 if(contactForm) {
-  contactForm.addEventListener('submit', function(e) {
+  contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault(); // Impede o recarregamento da página
+
     // Dispara o evento de lead no GTM
     window.dataLayer.push({
       'event': 'lead'
     });
+
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.innerHTML = 'Enviando...';
+    submitBtn.disabled = true;
+
+    // Coleta os dados do formulário
+    const inputs = contactForm.querySelectorAll('input, select, textarea');
+    const answers = {
+      q_nome: inputs[0].value,
+      q_whats: inputs[1].value,
+      q_email: inputs[2].value,
+      q_atuacao: inputs[3].value,
+      q_investimento: inputs[4].value,
+      q_agencia: inputs[5].value,
+      q_atendimento: inputs[6].value,
+      q_desafio: inputs[7].value
+    };
+
+    try {
+      // Envia para o CRM Nexus
+      const response = await fetch('https://nexusx6.com.br/api/campaigns/lead/complete', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          id: crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(),
+          clientId: 'agencia-x6', // Identificador da agência
+          sourceParam: window.location.hostname,
+          answers: answers
+        })
+      });
+
+      if(response.ok) {
+        submitBtn.innerHTML = '&#10004; Recebemos seus dados!';
+        submitBtn.style.background = '#10B981'; // Verde sucesso
+        contactForm.reset();
+        
+        setTimeout(() => {
+          submitBtn.innerHTML = originalBtnText;
+          submitBtn.style.background = '';
+          submitBtn.disabled = false;
+        }, 5000);
+      } else {
+        throw new Error('Erro na API');
+      }
+    } catch(err) {
+      console.error('Erro ao enviar lead:', err);
+      submitBtn.innerHTML = 'Erro ao enviar. Tente novamente.';
+      submitBtn.style.background = '#EF4444'; // Vermelho erro
+      
+      setTimeout(() => {
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.style.background = '';
+        submitBtn.disabled = false;
+      }, 3000);
+    }
   });
 }
 // Form chips function
