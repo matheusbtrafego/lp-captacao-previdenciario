@@ -2037,8 +2037,8 @@ const sessionId = crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(
 let telemetryLog = [];
 let telemetryTimeout = null;
 
-function sendTelemetry(actionName) {
-  telemetryLog.push({ action: actionName, time: new Date().toISOString() });
+function sendTelemetry(q_id, actionType) {
+  telemetryLog.push({ q_id: q_id, action: actionType, time: new Date().toISOString() });
   
   clearTimeout(telemetryTimeout);
   telemetryTimeout = setTimeout(async () => {
@@ -2076,10 +2076,13 @@ const contactForm = document.getElementById('contactForm');
 if(contactForm) {
   
   // Registra eventos de telemetria nos campos
-  contactForm.querySelectorAll('input, select, textarea').forEach(el => {
-    let fieldName = el.previousElementSibling ? el.previousElementSibling.innerText : (el.placeholder || el.tagName);
-    el.addEventListener('focus', () => sendTelemetry(`Iniciou: ${fieldName}`));
-    el.addEventListener('change', () => sendTelemetry(`Preencheu: ${fieldName}`));
+  contactForm.querySelectorAll('input, select, textarea').forEach((el, index) => {
+    // Mapeamento manual dos q_ids para bater com o banco de perguntas
+    const qIds = ['q_nome', 'q_whats', 'q_email', 'q_atuacao', 'q_investimento', 'q_agencia', 'q_atendimento', 'q_desafio'];
+    const q_id = qIds[index] || el.name || el.id;
+    
+    el.addEventListener('focus', () => sendTelemetry(q_id, 'focus'));
+    el.addEventListener('change', () => sendTelemetry(q_id, 'change'));
   });
 
   contactForm.addEventListener('submit', async function(e) {
