@@ -858,7 +858,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="nav-r">
     <a href="#resultados" class="nav-link">Resultados</a>
     <a href="#gestor" class="nav-link">Sobre</a>
-    <a href="#contato" class="btn btn-primary btn-arr" style="font-size:13px;padding:10px 20px">Falar agora</a>
+    <a href="#contato" class="btn btn-primary btn-arr gtm-cta" style="font-size:13px;padding:10px 20px">Falar agora</a>
   </div>
 </nav>
 
@@ -873,8 +873,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h1 class="hero-h1"><span style="white-space: nowrap">Escale seu faturamento</span><br><span style="white-space: nowrap">com uma verdadeira</span><br><span class="accent" style="white-space: nowrap">máquina de contratos.</span></h1>
       <p class="hero-sub">Viver do "boca a boca" é lento e aterroriza o caixa. Nós desenhamos funis de captação que entregam clientes qualificados no seu WhatsApp todos os dias. Acelere o crescimento da sua banca de forma previsível e respeitando 100% a OAB.</p>
       <div class="hero-actions">
-        <a href="#" onclick="openModal(event)" class="btn btn-primary btn-arr">Entrar em contato</a>
-        <a href="#resultados" class="btn btn-ghost btn-arr">Ver resultados reais</a>
+        <a href="#contato" class="btn btn-primary btn-arr gtm-cta">Entrar em contato</a>
+        <a href="#contato" class="btn btn-ghost btn-arr gtm-cta">Ver resultados reais</a>
       </div>
       <div class="hero-trust">
         <div class="trust-i"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>Conforme OAB</div>
@@ -946,7 +946,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="eyebrow">A realidade do mercado jurídico</div>
       <h2 class="dor-title">Você domina a lei.<br>Mas e os <span class="accent">novos clientes?</span></h2>
       <p class="dor-sub">O advogado de sucesso enfrenta um desafio que vai além do processo — precisa de um fluxo previsível e constante de novos clientes qualificados que não param de chegar. Seu próximo grande contrato está no Meta Ads agora.</p>
-      <a href="#contato" class="btn btn-primary btn-arr">Quero esse fluxo no meu escritório</a>
+      <a href="#contato" class="btn btn-primary btn-arr gtm-cta">Quero esse fluxo no meu escritório</a>
     </div>
     <div class="reveal rd1">
       <div class="dor-items">
@@ -1656,8 +1656,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="cta-title">Pronto para ter um fluxo constante de novos casos?</h2>
     <p class="cta-sub">Preencha o formulário. Retornamos em até 24h — sem reunião obrigatória, sem compromisso.</p>
     <div class="cta-btns">
-      <a href="#contato" class="btn btn-white btn-arr">Quero mais contratos</a>
-      <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-gw btn-arr">Falar no WhatsApp</a>
+      <a href="#contato" class="btn btn-white btn-arr gtm-cta">Quero mais contratos</a>
+      <a href="#contato" class="btn btn-gw btn-arr gtm-cta">Falar no WhatsApp</a>
     </div>
   </div>
 </div>
@@ -1998,6 +1998,30 @@ window.addEventListener('click', (e) => {
       if(lineEl) lineEl.classList.add('active');
     }, 2500);
   });
+
+// GTM Tracking Events
+window.dataLayer = window.dataLayer || [];
+
+// Evento nos botões CTA
+document.querySelectorAll('.gtm-cta').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    window.dataLayer.push({
+      'event': 'click_cta',
+      'cta_text': this.innerText.trim()
+    });
+  });
+});
+
+// Evento no formulário de contato (Lead)
+const contactForm = document.getElementById('contactForm');
+if(contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    // Dispara o evento de lead no GTM
+    window.dataLayer.push({
+      'event': 'lead'
+    });
+  });
+}
 </script>
 </body>
 </html>
