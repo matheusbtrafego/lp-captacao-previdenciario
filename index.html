@@ -1679,11 +1679,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="form-card reveal rd1">
       <form id="contactForm">
         <div class="form-row">
-          <div class="field"><label>Nome completo</label><input type="text" placeholder="Dr. João Silva" required></div>
-          <div class="field"><label>WhatsApp</label><input type="tel" placeholder="(11) 99999-9999" required></div>
+          <div class="field"><label>Nome completo</label><input type="text" placeholder="Dr. João Silva" autocomplete="name" required></div>
+          <div class="field"><label>WhatsApp</label><input type="tel" placeholder="(11) 99999-9999" autocomplete="tel" required></div>
         </div>
         <div class="form-row">
-          <div class="field"><label>Email</label><input type="email" placeholder="joao@escritorio.adv.br"></div>
+          <div class="field"><label>Email</label><input type="email" placeholder="joao@escritorio.adv.br" autocomplete="email"></div>
           <div class="field"><label>Área de atuação</label><select required><option value="" disabled selected>Selecione</option><option>Previdenciário</option><option>Direito de Família</option><option>Trabalhista</option><option>Civil</option><option>Outra área</option></select></div>
         </div>
         <div class="form-row">
@@ -2005,9 +2005,11 @@ window.dataLayer = window.dataLayer || [];
 // Evento nos botões CTA
 document.querySelectorAll('.gtm-cta').forEach(btn => {
   btn.addEventListener('click', function(e) {
+    let btnName = this.innerText.trim();
+    if (!btnName) btnName = 'click_cta'; // fallback para garantir
+    
     window.dataLayer.push({
-      'event': 'click_cta',
-      'cta_text': this.innerText.trim()
+      'event': btnName
     });
   });
 });
